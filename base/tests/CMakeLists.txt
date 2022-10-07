@@ -1,0 +1,24 @@
+add_executable(timestamp_unittest Timestamp_unittest.cpp)
+target_link_libraries(timestamp_unittest myserver_base)
+#add_test(NAME timestamp_unittest COMMAND timestamp_unittest)
+
+add_executable(Atomic_unittest Atomic_unittest.cpp)
+target_link_libraries(Atomic_unittest myserver_base)
+
+add_executable(Exception_test Exception_test.cpp)
+target_link_libraries(Exception_test myserver_base)
+
+add_executable(Thread_test Thread_test.cpp)
+target_link_libraries(Thread_test myserver_base)
+
+add_executable(BlockingQueue_test BlockingQueue_test.cpp)
+target_link_libraries(BlockingQueue_test myserver_base)
+
+add_executable(BoundedBlockingQueue_test BoundedBlockingQueue_test.cpp)
+target_link_libraries(BoundedBlockingQueue_test myserver_base)
+
+add_executable(ThreadPool_test ThreadPool_test.cpp)
+target_link_libraries(ThreadPool_test myserver_base)
+
+add_executable(Singleton_test Singleton_test.cpp)
+target_link_libraries(Singleton_test myserver_base)

@@ -1,0 +1,587 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="myserver"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\usr\;CMake Files\..\..\..\usr\lib\;CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\;CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\;CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Boost-1.71.0\;CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_headers-1.71.0\;CMake Files\base\;CMake Files\base\tests\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/xqm/myserver/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/strip">
+				<Option working_dir="/home/xqm/myserver/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/strip"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/local">
+				<Option working_dir="/home/xqm/myserver/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/local"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install">
+				<Option working_dir="/home/xqm/myserver/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/Makefile&quot;  VERBOSE=1 install"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="list_install_components">
+				<Option working_dir="/home/xqm/myserver/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/Makefile&quot;  VERBOSE=1 list_install_components"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/xqm/myserver/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/xqm/myserver/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test">
+				<Option working_dir="/home/xqm/myserver/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/Makefile&quot;  VERBOSE=1 test"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="myserver_base">
+				<Option output="/home/xqm/myserver/cmake-build-debug/lib/libmyserver_base.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/xqm/myserver/cmake-build-debug/base"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/xqm/myserver"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/base/Makefile&quot;  VERBOSE=1 myserver_base"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/base/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/base/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/base/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="myserver_base/fast">
+				<Option output="/home/xqm/myserver/cmake-build-debug/lib/libmyserver_base.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/xqm/myserver/cmake-build-debug/base"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/xqm/myserver"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/base/Makefile&quot;  VERBOSE=1 myserver_base/fast"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/base/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/base/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/base/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="timestamp_unittest">
+				<Option output="/home/xqm/myserver/cmake-build-debug/bin/timestamp_unittest" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/xqm/myserver/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/xqm/myserver"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/base/tests/Makefile&quot;  VERBOSE=1 timestamp_unittest"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/base/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/base/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/base/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="timestamp_unittest/fast">
+				<Option output="/home/xqm/myserver/cmake-build-debug/bin/timestamp_unittest" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/xqm/myserver/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/xqm/myserver"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/base/tests/Makefile&quot;  VERBOSE=1 timestamp_unittest/fast"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/base/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/base/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/base/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Atomic_unittest">
+				<Option output="/home/xqm/myserver/cmake-build-debug/bin/Atomic_unittest" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/xqm/myserver/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/xqm/myserver"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/base/tests/Makefile&quot;  VERBOSE=1 Atomic_unittest"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/base/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/base/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/base/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Atomic_unittest/fast">
+				<Option output="/home/xqm/myserver/cmake-build-debug/bin/Atomic_unittest" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/xqm/myserver/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/xqm/myserver"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/base/tests/Makefile&quot;  VERBOSE=1 Atomic_unittest/fast"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/base/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/base/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/base/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="BoundedBlockingQueue_test">
+				<Option output="/home/xqm/myserver/cmake-build-debug/bin/BoundedBlockingQueue_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/xqm/myserver/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/xqm/myserver"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/base/tests/Makefile&quot;  VERBOSE=1 BoundedBlockingQueue_test"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/base/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/base/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/base/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="BoundedBlockingQueue_test/fast">
+				<Option output="/home/xqm/myserver/cmake-build-debug/bin/BoundedBlockingQueue_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/xqm/myserver/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/xqm/myserver"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/base/tests/Makefile&quot;  VERBOSE=1 BoundedBlockingQueue_test/fast"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/base/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/base/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/base/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Exception_test">
+				<Option output="/home/xqm/myserver/cmake-build-debug/bin/Exception_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/xqm/myserver/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/xqm/myserver"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/base/tests/Makefile&quot;  VERBOSE=1 Exception_test"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/base/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/base/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/base/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Exception_test/fast">
+				<Option output="/home/xqm/myserver/cmake-build-debug/bin/Exception_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/xqm/myserver/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/xqm/myserver"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/base/tests/Makefile&quot;  VERBOSE=1 Exception_test/fast"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/base/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/base/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/base/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Thread_test">
+				<Option output="/home/xqm/myserver/cmake-build-debug/bin/Thread_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/xqm/myserver/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/xqm/myserver"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/base/tests/Makefile&quot;  VERBOSE=1 Thread_test"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/base/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/base/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/base/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Thread_test/fast">
+				<Option output="/home/xqm/myserver/cmake-build-debug/bin/Thread_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/xqm/myserver/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/xqm/myserver"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/base/tests/Makefile&quot;  VERBOSE=1 Thread_test/fast"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/base/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/base/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/base/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Singleton_test">
+				<Option output="/home/xqm/myserver/cmake-build-debug/bin/Singleton_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/xqm/myserver/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/xqm/myserver"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/base/tests/Makefile&quot;  VERBOSE=1 Singleton_test"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/base/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/base/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/base/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Singleton_test/fast">
+				<Option output="/home/xqm/myserver/cmake-build-debug/bin/Singleton_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/xqm/myserver/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/xqm/myserver"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/base/tests/Makefile&quot;  VERBOSE=1 Singleton_test/fast"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/base/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/base/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/base/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ThreadPool_test">
+				<Option output="/home/xqm/myserver/cmake-build-debug/bin/ThreadPool_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/xqm/myserver/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/xqm/myserver"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/base/tests/Makefile&quot;  VERBOSE=1 ThreadPool_test"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/base/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/base/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/base/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ThreadPool_test/fast">
+				<Option output="/home/xqm/myserver/cmake-build-debug/bin/ThreadPool_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/xqm/myserver/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/xqm/myserver"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/base/tests/Makefile&quot;  VERBOSE=1 ThreadPool_test/fast"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/base/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/base/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/base/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="BlockingQueue_test">
+				<Option output="/home/xqm/myserver/cmake-build-debug/bin/BlockingQueue_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/xqm/myserver/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/xqm/myserver"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/base/tests/Makefile&quot;  VERBOSE=1 BlockingQueue_test"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/base/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/base/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/base/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="BlockingQueue_test/fast">
+				<Option output="/home/xqm/myserver/cmake-build-debug/bin/BlockingQueue_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/xqm/myserver/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/xqm/myserver"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/base/tests/Makefile&quot;  VERBOSE=1 BlockingQueue_test/fast"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/base/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/base/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/xqm/myserver/cmake-build-debug/base/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/xqm/myserver/base/Condition.cpp">
+			<Option target="myserver_base"/>
+		</Unit>
+		<Unit filename="/home/xqm/myserver/base/Condition.h">
+			<Option target="myserver_base"/>
+		</Unit>
+		<Unit filename="/home/xqm/myserver/base/CountDownLatch.cpp">
+			<Option target="myserver_base"/>
+		</Unit>
+		<Unit filename="/home/xqm/myserver/base/CountDownLatch.h">
+			<Option target="myserver_base"/>
+		</Unit>
+		<Unit filename="/home/xqm/myserver/base/Exception.cpp">
+			<Option target="myserver_base"/>
+		</Unit>
+		<Unit filename="/home/xqm/myserver/base/Exception.h">
+			<Option target="myserver_base"/>
+		</Unit>
+		<Unit filename="/home/xqm/myserver/base/Thread.cpp">
+			<Option target="myserver_base"/>
+		</Unit>
+		<Unit filename="/home/xqm/myserver/base/Thread.h">
+			<Option target="myserver_base"/>
+		</Unit>
+		<Unit filename="/home/xqm/myserver/base/ThreadPool.cpp">
+			<Option target="myserver_base"/>
+		</Unit>
+		<Unit filename="/home/xqm/myserver/base/ThreadPool.h">
+			<Option target="myserver_base"/>
+		</Unit>
+		<Unit filename="/home/xqm/myserver/base/Timestamp.cpp">
+			<Option target="myserver_base"/>
+		</Unit>
+		<Unit filename="/home/xqm/myserver/base/Timestamp.h">
+			<Option target="myserver_base"/>
+		</Unit>
+		<Unit filename="/home/xqm/myserver/base/tests/Atomic_unittest.cpp">
+			<Option target="Atomic_unittest"/>
+		</Unit>
+		<Unit filename="/home/xqm/myserver/base/tests/BlockingQueue_test.cpp">
+			<Option target="BlockingQueue_test"/>
+		</Unit>
+		<Unit filename="/home/xqm/myserver/base/tests/BoundedBlockingQueue_test.cpp">
+			<Option target="BoundedBlockingQueue_test"/>
+		</Unit>
+		<Unit filename="/home/xqm/myserver/base/tests/Exception_test.cpp">
+			<Option target="Exception_test"/>
+		</Unit>
+		<Unit filename="/home/xqm/myserver/base/tests/Singleton_test.cpp">
+			<Option target="Singleton_test"/>
+		</Unit>
+		<Unit filename="/home/xqm/myserver/base/tests/ThreadPool_test.cpp">
+			<Option target="ThreadPool_test"/>
+		</Unit>
+		<Unit filename="/home/xqm/myserver/base/tests/Thread_test.cpp">
+			<Option target="Thread_test"/>
+		</Unit>
+		<Unit filename="/home/xqm/myserver/base/tests/Timestamp_unittest.cpp">
+			<Option target="timestamp_unittest"/>
+		</Unit>
+		<Unit filename="/home/xqm/myserver/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/xqm/myserver/../../../usr/lib/x86_64-linux-gnu/cmake/Boost-1.71.0/BoostConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Boost-1.71.0\"/>
+		</Unit>
+		<Unit filename="/home/xqm/myserver/../../../usr/lib/x86_64-linux-gnu/cmake/Boost-1.71.0/BoostConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\Boost-1.71.0\"/>
+		</Unit>
+		<Unit filename="/home/xqm/myserver/../../../usr/lib/x86_64-linux-gnu/cmake/boost_headers-1.71.0/boost_headers-config-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_headers-1.71.0\"/>
+		</Unit>
+		<Unit filename="/home/xqm/myserver/../../../usr/lib/x86_64-linux-gnu/cmake/boost_headers-1.71.0/boost_headers-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\lib\x86_64-linux-gnu\cmake\boost_headers-1.71.0\"/>
+		</Unit>
+		<Unit filename="/home/xqm/myserver/base/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\base\"/>
+		</Unit>
+		<Unit filename="/home/xqm/myserver/base/tests/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\base\tests\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

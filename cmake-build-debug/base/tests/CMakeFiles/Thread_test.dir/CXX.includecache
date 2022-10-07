@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/xqm/myserver/base/Atomic.h
+noncopyable.h
+/home/xqm/myserver/base/noncopyable.h
+stdint.h
+-
+
+/home/xqm/myserver/base/CurrentThread.h
+
+/home/xqm/myserver/base/Thread.h
+Atomic.h
+/home/xqm/myserver/base/Atomic.h
+functional
+-
+noncopyable.h
+/home/xqm/myserver/base/noncopyable.h
+pthread.h
+-
+
+/home/xqm/myserver/base/noncopyable.h
+
+/home/xqm/myserver/base/tests/Thread_test.cpp
+../Thread.h
+/home/xqm/myserver/base/Thread.h
+../CurrentThread.h
+/home/xqm/myserver/base/CurrentThread.h
+string
+-
+boost/bind.hpp
+-
+stdio.h
+-
+
