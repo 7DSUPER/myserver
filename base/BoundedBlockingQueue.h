@@ -72,6 +72,6 @@ private:
     Condition                   notFull_;
     boost::circular_buffer<T>   queue_;
 };
-}
+} // namespace x7m
 
 #endif //MYSERVER_BOUNDEDBLOCKINGQUEUE_H

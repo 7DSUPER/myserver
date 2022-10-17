@@ -80,27 +80,15 @@ install/local/fast: preinstall/fast
 	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
 
-# Special rule for the target test
-test/fast: test
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
 
-.PHONY : test/fast
-
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
+.PHONY : list_install_components/fast
 
 # Special rule for the target rebuild_cache
 rebuild_cache:
@@ -113,15 +101,27 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
 
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
 
-.PHONY : list_install_components/fast
+.PHONY : edit_cache/fast
+
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
 
 # Special rule for the target install
 install: preinstall
@@ -183,19 +183,34 @@ timestamp_unittest/fast:
 .PHONY : timestamp_unittest/fast
 
 # Convenience name for target.
-base/tests/CMakeFiles/Atomic_unittest.dir/rule:
-	cd /home/xqm/myserver/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 base/tests/CMakeFiles/Atomic_unittest.dir/rule
-.PHONY : base/tests/CMakeFiles/Atomic_unittest.dir/rule
+base/tests/CMakeFiles/LogStream_bench.dir/rule:
+	cd /home/xqm/myserver/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 base/tests/CMakeFiles/LogStream_bench.dir/rule
+.PHONY : base/tests/CMakeFiles/LogStream_bench.dir/rule
 
 # Convenience name for target.
-Atomic_unittest: base/tests/CMakeFiles/Atomic_unittest.dir/rule
+LogStream_bench: base/tests/CMakeFiles/LogStream_bench.dir/rule
 
-.PHONY : Atomic_unittest
+.PHONY : LogStream_bench
 
 # fast build rule for target.
-Atomic_unittest/fast:
-	cd /home/xqm/myserver/cmake-build-debug && $(MAKE) -f base/tests/CMakeFiles/Atomic_unittest.dir/build.make base/tests/CMakeFiles/Atomic_unittest.dir/build
-.PHONY : Atomic_unittest/fast
+LogStream_bench/fast:
+	cd /home/xqm/myserver/cmake-build-debug && $(MAKE) -f base/tests/CMakeFiles/LogStream_bench.dir/build.make base/tests/CMakeFiles/LogStream_bench.dir/build
+.PHONY : LogStream_bench/fast
+
+# Convenience name for target.
+base/tests/CMakeFiles/SingletonThreadLocal_test.dir/rule:
+	cd /home/xqm/myserver/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 base/tests/CMakeFiles/SingletonThreadLocal_test.dir/rule
+.PHONY : base/tests/CMakeFiles/SingletonThreadLocal_test.dir/rule
+
+# Convenience name for target.
+SingletonThreadLocal_test: base/tests/CMakeFiles/SingletonThreadLocal_test.dir/rule
+
+.PHONY : SingletonThreadLocal_test
+
+# fast build rule for target.
+SingletonThreadLocal_test/fast:
+	cd /home/xqm/myserver/cmake-build-debug && $(MAKE) -f base/tests/CMakeFiles/SingletonThreadLocal_test.dir/build.make base/tests/CMakeFiles/SingletonThreadLocal_test.dir/build
+.PHONY : SingletonThreadLocal_test/fast
 
 # Convenience name for target.
 base/tests/CMakeFiles/BoundedBlockingQueue_test.dir/rule:
@@ -211,6 +226,36 @@ BoundedBlockingQueue_test: base/tests/CMakeFiles/BoundedBlockingQueue_test.dir/r
 BoundedBlockingQueue_test/fast:
 	cd /home/xqm/myserver/cmake-build-debug && $(MAKE) -f base/tests/CMakeFiles/BoundedBlockingQueue_test.dir/build.make base/tests/CMakeFiles/BoundedBlockingQueue_test.dir/build
 .PHONY : BoundedBlockingQueue_test/fast
+
+# Convenience name for target.
+base/tests/CMakeFiles/Atomic_unittest.dir/rule:
+	cd /home/xqm/myserver/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 base/tests/CMakeFiles/Atomic_unittest.dir/rule
+.PHONY : base/tests/CMakeFiles/Atomic_unittest.dir/rule
+
+# Convenience name for target.
+Atomic_unittest: base/tests/CMakeFiles/Atomic_unittest.dir/rule
+
+.PHONY : Atomic_unittest
+
+# fast build rule for target.
+Atomic_unittest/fast:
+	cd /home/xqm/myserver/cmake-build-debug && $(MAKE) -f base/tests/CMakeFiles/Atomic_unittest.dir/build.make base/tests/CMakeFiles/Atomic_unittest.dir/build
+.PHONY : Atomic_unittest/fast
+
+# Convenience name for target.
+base/tests/CMakeFiles/Logging_test.dir/rule:
+	cd /home/xqm/myserver/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 base/tests/CMakeFiles/Logging_test.dir/rule
+.PHONY : base/tests/CMakeFiles/Logging_test.dir/rule
+
+# Convenience name for target.
+Logging_test: base/tests/CMakeFiles/Logging_test.dir/rule
+
+.PHONY : Logging_test
+
+# fast build rule for target.
+Logging_test/fast:
+	cd /home/xqm/myserver/cmake-build-debug && $(MAKE) -f base/tests/CMakeFiles/Logging_test.dir/build.make base/tests/CMakeFiles/Logging_test.dir/build
+.PHONY : Logging_test/fast
 
 # Convenience name for target.
 base/tests/CMakeFiles/Exception_test.dir/rule:
@@ -258,6 +303,36 @@ Singleton_test/fast:
 .PHONY : Singleton_test/fast
 
 # Convenience name for target.
+base/tests/CMakeFiles/BlockingQueue_test.dir/rule:
+	cd /home/xqm/myserver/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 base/tests/CMakeFiles/BlockingQueue_test.dir/rule
+.PHONY : base/tests/CMakeFiles/BlockingQueue_test.dir/rule
+
+# Convenience name for target.
+BlockingQueue_test: base/tests/CMakeFiles/BlockingQueue_test.dir/rule
+
+.PHONY : BlockingQueue_test
+
+# fast build rule for target.
+BlockingQueue_test/fast:
+	cd /home/xqm/myserver/cmake-build-debug && $(MAKE) -f base/tests/CMakeFiles/BlockingQueue_test.dir/build.make base/tests/CMakeFiles/BlockingQueue_test.dir/build
+.PHONY : BlockingQueue_test/fast
+
+# Convenience name for target.
+base/tests/CMakeFiles/ThreadLocal_test.dir/rule:
+	cd /home/xqm/myserver/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 base/tests/CMakeFiles/ThreadLocal_test.dir/rule
+.PHONY : base/tests/CMakeFiles/ThreadLocal_test.dir/rule
+
+# Convenience name for target.
+ThreadLocal_test: base/tests/CMakeFiles/ThreadLocal_test.dir/rule
+
+.PHONY : ThreadLocal_test
+
+# fast build rule for target.
+ThreadLocal_test/fast:
+	cd /home/xqm/myserver/cmake-build-debug && $(MAKE) -f base/tests/CMakeFiles/ThreadLocal_test.dir/build.make base/tests/CMakeFiles/ThreadLocal_test.dir/build
+.PHONY : ThreadLocal_test/fast
+
+# Convenience name for target.
 base/tests/CMakeFiles/ThreadPool_test.dir/rule:
 	cd /home/xqm/myserver/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 base/tests/CMakeFiles/ThreadPool_test.dir/rule
 .PHONY : base/tests/CMakeFiles/ThreadPool_test.dir/rule
@@ -273,19 +348,34 @@ ThreadPool_test/fast:
 .PHONY : ThreadPool_test/fast
 
 # Convenience name for target.
-base/tests/CMakeFiles/BlockingQueue_test.dir/rule:
-	cd /home/xqm/myserver/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 base/tests/CMakeFiles/BlockingQueue_test.dir/rule
-.PHONY : base/tests/CMakeFiles/BlockingQueue_test.dir/rule
+base/tests/CMakeFiles/ThreadLocalSingleton_test.dir/rule:
+	cd /home/xqm/myserver/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 base/tests/CMakeFiles/ThreadLocalSingleton_test.dir/rule
+.PHONY : base/tests/CMakeFiles/ThreadLocalSingleton_test.dir/rule
 
 # Convenience name for target.
-BlockingQueue_test: base/tests/CMakeFiles/BlockingQueue_test.dir/rule
+ThreadLocalSingleton_test: base/tests/CMakeFiles/ThreadLocalSingleton_test.dir/rule
 
-.PHONY : BlockingQueue_test
+.PHONY : ThreadLocalSingleton_test
 
 # fast build rule for target.
-BlockingQueue_test/fast:
-	cd /home/xqm/myserver/cmake-build-debug && $(MAKE) -f base/tests/CMakeFiles/BlockingQueue_test.dir/build.make base/tests/CMakeFiles/BlockingQueue_test.dir/build
-.PHONY : BlockingQueue_test/fast
+ThreadLocalSingleton_test/fast:
+	cd /home/xqm/myserver/cmake-build-debug && $(MAKE) -f base/tests/CMakeFiles/ThreadLocalSingleton_test.dir/build.make base/tests/CMakeFiles/ThreadLocalSingleton_test.dir/build
+.PHONY : ThreadLocalSingleton_test/fast
+
+# Convenience name for target.
+base/tests/CMakeFiles/LogStream_test.dir/rule:
+	cd /home/xqm/myserver/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 base/tests/CMakeFiles/LogStream_test.dir/rule
+.PHONY : base/tests/CMakeFiles/LogStream_test.dir/rule
+
+# Convenience name for target.
+LogStream_test: base/tests/CMakeFiles/LogStream_test.dir/rule
+
+.PHONY : LogStream_test
+
+# fast build rule for target.
+LogStream_test/fast:
+	cd /home/xqm/myserver/cmake-build-debug && $(MAKE) -f base/tests/CMakeFiles/LogStream_test.dir/build.make base/tests/CMakeFiles/LogStream_test.dir/build
+.PHONY : LogStream_test/fast
 
 Atomic_unittest.o: Atomic_unittest.cpp.o
 
@@ -395,6 +485,114 @@ Exception_test.cpp.s:
 	cd /home/xqm/myserver/cmake-build-debug && $(MAKE) -f base/tests/CMakeFiles/Exception_test.dir/build.make base/tests/CMakeFiles/Exception_test.dir/Exception_test.cpp.s
 .PHONY : Exception_test.cpp.s
 
+LogStream_bench.o: LogStream_bench.cpp.o
+
+.PHONY : LogStream_bench.o
+
+# target to build an object file
+LogStream_bench.cpp.o:
+	cd /home/xqm/myserver/cmake-build-debug && $(MAKE) -f base/tests/CMakeFiles/LogStream_bench.dir/build.make base/tests/CMakeFiles/LogStream_bench.dir/LogStream_bench.cpp.o
+.PHONY : LogStream_bench.cpp.o
+
+LogStream_bench.i: LogStream_bench.cpp.i
+
+.PHONY : LogStream_bench.i
+
+# target to preprocess a source file
+LogStream_bench.cpp.i:
+	cd /home/xqm/myserver/cmake-build-debug && $(MAKE) -f base/tests/CMakeFiles/LogStream_bench.dir/build.make base/tests/CMakeFiles/LogStream_bench.dir/LogStream_bench.cpp.i
+.PHONY : LogStream_bench.cpp.i
+
+LogStream_bench.s: LogStream_bench.cpp.s
+
+.PHONY : LogStream_bench.s
+
+# target to generate assembly for a file
+LogStream_bench.cpp.s:
+	cd /home/xqm/myserver/cmake-build-debug && $(MAKE) -f base/tests/CMakeFiles/LogStream_bench.dir/build.make base/tests/CMakeFiles/LogStream_bench.dir/LogStream_bench.cpp.s
+.PHONY : LogStream_bench.cpp.s
+
+LogStream_test.o: LogStream_test.cpp.o
+
+.PHONY : LogStream_test.o
+
+# target to build an object file
+LogStream_test.cpp.o:
+	cd /home/xqm/myserver/cmake-build-debug && $(MAKE) -f base/tests/CMakeFiles/LogStream_test.dir/build.make base/tests/CMakeFiles/LogStream_test.dir/LogStream_test.cpp.o
+.PHONY : LogStream_test.cpp.o
+
+LogStream_test.i: LogStream_test.cpp.i
+
+.PHONY : LogStream_test.i
+
+# target to preprocess a source file
+LogStream_test.cpp.i:
+	cd /home/xqm/myserver/cmake-build-debug && $(MAKE) -f base/tests/CMakeFiles/LogStream_test.dir/build.make base/tests/CMakeFiles/LogStream_test.dir/LogStream_test.cpp.i
+.PHONY : LogStream_test.cpp.i
+
+LogStream_test.s: LogStream_test.cpp.s
+
+.PHONY : LogStream_test.s
+
+# target to generate assembly for a file
+LogStream_test.cpp.s:
+	cd /home/xqm/myserver/cmake-build-debug && $(MAKE) -f base/tests/CMakeFiles/LogStream_test.dir/build.make base/tests/CMakeFiles/LogStream_test.dir/LogStream_test.cpp.s
+.PHONY : LogStream_test.cpp.s
+
+Logging_test.o: Logging_test.cpp.o
+
+.PHONY : Logging_test.o
+
+# target to build an object file
+Logging_test.cpp.o:
+	cd /home/xqm/myserver/cmake-build-debug && $(MAKE) -f base/tests/CMakeFiles/Logging_test.dir/build.make base/tests/CMakeFiles/Logging_test.dir/Logging_test.cpp.o
+.PHONY : Logging_test.cpp.o
+
+Logging_test.i: Logging_test.cpp.i
+
+.PHONY : Logging_test.i
+
+# target to preprocess a source file
+Logging_test.cpp.i:
+	cd /home/xqm/myserver/cmake-build-debug && $(MAKE) -f base/tests/CMakeFiles/Logging_test.dir/build.make base/tests/CMakeFiles/Logging_test.dir/Logging_test.cpp.i
+.PHONY : Logging_test.cpp.i
+
+Logging_test.s: Logging_test.cpp.s
+
+.PHONY : Logging_test.s
+
+# target to generate assembly for a file
+Logging_test.cpp.s:
+	cd /home/xqm/myserver/cmake-build-debug && $(MAKE) -f base/tests/CMakeFiles/Logging_test.dir/build.make base/tests/CMakeFiles/Logging_test.dir/Logging_test.cpp.s
+.PHONY : Logging_test.cpp.s
+
+SingletonThreadLocal_test.o: SingletonThreadLocal_test.cpp.o
+
+.PHONY : SingletonThreadLocal_test.o
+
+# target to build an object file
+SingletonThreadLocal_test.cpp.o:
+	cd /home/xqm/myserver/cmake-build-debug && $(MAKE) -f base/tests/CMakeFiles/SingletonThreadLocal_test.dir/build.make base/tests/CMakeFiles/SingletonThreadLocal_test.dir/SingletonThreadLocal_test.cpp.o
+.PHONY : SingletonThreadLocal_test.cpp.o
+
+SingletonThreadLocal_test.i: SingletonThreadLocal_test.cpp.i
+
+.PHONY : SingletonThreadLocal_test.i
+
+# target to preprocess a source file
+SingletonThreadLocal_test.cpp.i:
+	cd /home/xqm/myserver/cmake-build-debug && $(MAKE) -f base/tests/CMakeFiles/SingletonThreadLocal_test.dir/build.make base/tests/CMakeFiles/SingletonThreadLocal_test.dir/SingletonThreadLocal_test.cpp.i
+.PHONY : SingletonThreadLocal_test.cpp.i
+
+SingletonThreadLocal_test.s: SingletonThreadLocal_test.cpp.s
+
+.PHONY : SingletonThreadLocal_test.s
+
+# target to generate assembly for a file
+SingletonThreadLocal_test.cpp.s:
+	cd /home/xqm/myserver/cmake-build-debug && $(MAKE) -f base/tests/CMakeFiles/SingletonThreadLocal_test.dir/build.make base/tests/CMakeFiles/SingletonThreadLocal_test.dir/SingletonThreadLocal_test.cpp.s
+.PHONY : SingletonThreadLocal_test.cpp.s
+
 Singleton_test.o: Singleton_test.cpp.o
 
 .PHONY : Singleton_test.o
@@ -421,6 +619,60 @@ Singleton_test.s: Singleton_test.cpp.s
 Singleton_test.cpp.s:
 	cd /home/xqm/myserver/cmake-build-debug && $(MAKE) -f base/tests/CMakeFiles/Singleton_test.dir/build.make base/tests/CMakeFiles/Singleton_test.dir/Singleton_test.cpp.s
 .PHONY : Singleton_test.cpp.s
+
+ThreadLocalSingleton_test.o: ThreadLocalSingleton_test.cpp.o
+
+.PHONY : ThreadLocalSingleton_test.o
+
+# target to build an object file
+ThreadLocalSingleton_test.cpp.o:
+	cd /home/xqm/myserver/cmake-build-debug && $(MAKE) -f base/tests/CMakeFiles/ThreadLocalSingleton_test.dir/build.make base/tests/CMakeFiles/ThreadLocalSingleton_test.dir/ThreadLocalSingleton_test.cpp.o
+.PHONY : ThreadLocalSingleton_test.cpp.o
+
+ThreadLocalSingleton_test.i: ThreadLocalSingleton_test.cpp.i
+
+.PHONY : ThreadLocalSingleton_test.i
+
+# target to preprocess a source file
+ThreadLocalSingleton_test.cpp.i:
+	cd /home/xqm/myserver/cmake-build-debug && $(MAKE) -f base/tests/CMakeFiles/ThreadLocalSingleton_test.dir/build.make base/tests/CMakeFiles/ThreadLocalSingleton_test.dir/ThreadLocalSingleton_test.cpp.i
+.PHONY : ThreadLocalSingleton_test.cpp.i
+
+ThreadLocalSingleton_test.s: ThreadLocalSingleton_test.cpp.s
+
+.PHONY : ThreadLocalSingleton_test.s
+
+# target to generate assembly for a file
+ThreadLocalSingleton_test.cpp.s:
+	cd /home/xqm/myserver/cmake-build-debug && $(MAKE) -f base/tests/CMakeFiles/ThreadLocalSingleton_test.dir/build.make base/tests/CMakeFiles/ThreadLocalSingleton_test.dir/ThreadLocalSingleton_test.cpp.s
+.PHONY : ThreadLocalSingleton_test.cpp.s
+
+ThreadLocal_test.o: ThreadLocal_test.cpp.o
+
+.PHONY : ThreadLocal_test.o
+
+# target to build an object file
+ThreadLocal_test.cpp.o:
+	cd /home/xqm/myserver/cmake-build-debug && $(MAKE) -f base/tests/CMakeFiles/ThreadLocal_test.dir/build.make base/tests/CMakeFiles/ThreadLocal_test.dir/ThreadLocal_test.cpp.o
+.PHONY : ThreadLocal_test.cpp.o
+
+ThreadLocal_test.i: ThreadLocal_test.cpp.i
+
+.PHONY : ThreadLocal_test.i
+
+# target to preprocess a source file
+ThreadLocal_test.cpp.i:
+	cd /home/xqm/myserver/cmake-build-debug && $(MAKE) -f base/tests/CMakeFiles/ThreadLocal_test.dir/build.make base/tests/CMakeFiles/ThreadLocal_test.dir/ThreadLocal_test.cpp.i
+.PHONY : ThreadLocal_test.cpp.i
+
+ThreadLocal_test.s: ThreadLocal_test.cpp.s
+
+.PHONY : ThreadLocal_test.s
+
+# target to generate assembly for a file
+ThreadLocal_test.cpp.s:
+	cd /home/xqm/myserver/cmake-build-debug && $(MAKE) -f base/tests/CMakeFiles/ThreadLocal_test.dir/build.make base/tests/CMakeFiles/ThreadLocal_test.dir/ThreadLocal_test.cpp.s
+.PHONY : ThreadLocal_test.cpp.s
 
 ThreadPool_test.o: ThreadPool_test.cpp.o
 
@@ -511,19 +763,25 @@ help:
 	@echo "... depend"
 	@echo "... install/strip"
 	@echo "... install/local"
-	@echo "... timestamp_unittest"
-	@echo "... Atomic_unittest"
-	@echo "... BoundedBlockingQueue_test"
+	@echo "... list_install_components"
+	@echo "... rebuild_cache"
+	@echo "... edit_cache"
 	@echo "... test"
+	@echo "... timestamp_unittest"
+	@echo "... LogStream_bench"
+	@echo "... SingletonThreadLocal_test"
+	@echo "... BoundedBlockingQueue_test"
+	@echo "... Atomic_unittest"
+	@echo "... Logging_test"
 	@echo "... Exception_test"
 	@echo "... Thread_test"
 	@echo "... Singleton_test"
-	@echo "... ThreadPool_test"
-	@echo "... edit_cache"
-	@echo "... rebuild_cache"
-	@echo "... list_install_components"
-	@echo "... BlockingQueue_test"
 	@echo "... install"
+	@echo "... BlockingQueue_test"
+	@echo "... ThreadLocal_test"
+	@echo "... ThreadPool_test"
+	@echo "... ThreadLocalSingleton_test"
+	@echo "... LogStream_test"
 	@echo "... Atomic_unittest.o"
 	@echo "... Atomic_unittest.i"
 	@echo "... Atomic_unittest.s"
@@ -536,9 +794,27 @@ help:
 	@echo "... Exception_test.o"
 	@echo "... Exception_test.i"
 	@echo "... Exception_test.s"
+	@echo "... LogStream_bench.o"
+	@echo "... LogStream_bench.i"
+	@echo "... LogStream_bench.s"
+	@echo "... LogStream_test.o"
+	@echo "... LogStream_test.i"
+	@echo "... LogStream_test.s"
+	@echo "... Logging_test.o"
+	@echo "... Logging_test.i"
+	@echo "... Logging_test.s"
+	@echo "... SingletonThreadLocal_test.o"
+	@echo "... SingletonThreadLocal_test.i"
+	@echo "... SingletonThreadLocal_test.s"
 	@echo "... Singleton_test.o"
 	@echo "... Singleton_test.i"
 	@echo "... Singleton_test.s"
+	@echo "... ThreadLocalSingleton_test.o"
+	@echo "... ThreadLocalSingleton_test.i"
+	@echo "... ThreadLocalSingleton_test.s"
+	@echo "... ThreadLocal_test.o"
+	@echo "... ThreadLocal_test.i"
+	@echo "... ThreadLocal_test.s"
 	@echo "... ThreadPool_test.o"
 	@echo "... ThreadPool_test.i"
 	@echo "... ThreadPool_test.s"

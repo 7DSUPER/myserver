@@ -22,6 +22,49 @@ base/CMakeFiles/myserver_base.dir/Exception.cpp.o: ../base/Exception.cpp
 base/CMakeFiles/myserver_base.dir/Exception.cpp.o: ../base/Exception.h
 base/CMakeFiles/myserver_base.dir/Exception.cpp.o: ../base/Types.h
 
+base/CMakeFiles/myserver_base.dir/FileUtil.cpp.o: ../base/FileUtil.cpp
+base/CMakeFiles/myserver_base.dir/FileUtil.cpp.o: ../base/FileUtil.h
+base/CMakeFiles/myserver_base.dir/FileUtil.cpp.o: ../base/StringPiece.h
+base/CMakeFiles/myserver_base.dir/FileUtil.cpp.o: ../base/Types.h
+base/CMakeFiles/myserver_base.dir/FileUtil.cpp.o: ../base/noncopyable.h
+
+base/CMakeFiles/myserver_base.dir/LogFile.cpp.o: ../base/Atomic.h
+base/CMakeFiles/myserver_base.dir/LogFile.cpp.o: ../base/CurrentThread.h
+base/CMakeFiles/myserver_base.dir/LogFile.cpp.o: ../base/LogFile.cpp
+base/CMakeFiles/myserver_base.dir/LogFile.cpp.o: ../base/LogFile.h
+base/CMakeFiles/myserver_base.dir/LogFile.cpp.o: ../base/LogStream.h
+base/CMakeFiles/myserver_base.dir/LogFile.cpp.o: ../base/Logging.h
+base/CMakeFiles/myserver_base.dir/LogFile.cpp.o: ../base/Mutex.h
+base/CMakeFiles/myserver_base.dir/LogFile.cpp.o: ../base/ProcessInfo.h
+base/CMakeFiles/myserver_base.dir/LogFile.cpp.o: ../base/StringPiece.h
+base/CMakeFiles/myserver_base.dir/LogFile.cpp.o: ../base/Thread.h
+base/CMakeFiles/myserver_base.dir/LogFile.cpp.o: ../base/Timestamp.h
+base/CMakeFiles/myserver_base.dir/LogFile.cpp.o: ../base/Types.h
+base/CMakeFiles/myserver_base.dir/LogFile.cpp.o: ../base/copyable.h
+base/CMakeFiles/myserver_base.dir/LogFile.cpp.o: ../base/noncopyable.h
+
+base/CMakeFiles/myserver_base.dir/LogStream.cpp.o: ../base/LogStream.cpp
+base/CMakeFiles/myserver_base.dir/LogStream.cpp.o: ../base/LogStream.h
+base/CMakeFiles/myserver_base.dir/LogStream.cpp.o: ../base/StringPiece.h
+base/CMakeFiles/myserver_base.dir/LogStream.cpp.o: ../base/Types.h
+base/CMakeFiles/myserver_base.dir/LogStream.cpp.o: ../base/noncopyable.h
+
+base/CMakeFiles/myserver_base.dir/Logging.cpp.o: ../base/CurrentThread.h
+base/CMakeFiles/myserver_base.dir/Logging.cpp.o: ../base/LogStream.h
+base/CMakeFiles/myserver_base.dir/Logging.cpp.o: ../base/Logging.cpp
+base/CMakeFiles/myserver_base.dir/Logging.cpp.o: ../base/Logging.h
+base/CMakeFiles/myserver_base.dir/Logging.cpp.o: ../base/StringPiece.h
+base/CMakeFiles/myserver_base.dir/Logging.cpp.o: ../base/Timestamp.h
+base/CMakeFiles/myserver_base.dir/Logging.cpp.o: ../base/Types.h
+base/CMakeFiles/myserver_base.dir/Logging.cpp.o: ../base/copyable.h
+base/CMakeFiles/myserver_base.dir/Logging.cpp.o: ../base/noncopyable.h
+
+base/CMakeFiles/myserver_base.dir/ProcessInfo.cpp.o: ../base/ProcessInfo.cpp
+base/CMakeFiles/myserver_base.dir/ProcessInfo.cpp.o: ../base/ProcessInfo.h
+base/CMakeFiles/myserver_base.dir/ProcessInfo.cpp.o: ../base/Timestamp.h
+base/CMakeFiles/myserver_base.dir/ProcessInfo.cpp.o: ../base/Types.h
+base/CMakeFiles/myserver_base.dir/ProcessInfo.cpp.o: ../base/copyable.h
+
 base/CMakeFiles/myserver_base.dir/Thread.cpp.o: ../base/Atomic.h
 base/CMakeFiles/myserver_base.dir/Thread.cpp.o: ../base/CurrentThread.h
 base/CMakeFiles/myserver_base.dir/Thread.cpp.o: ../base/Exception.h

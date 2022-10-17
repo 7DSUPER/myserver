@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 2.6)
 
-project(myserver C CXX)
+project(myserver CXX)
 
 enable_testing()
 
@@ -9,7 +9,7 @@ if(NOT CMAKE_BUILD_TYPE)
 endif()
 
 # only build examples if this is the main project
-if(CMAKE_PROJECT_NAME STREQUAL "muduo")
+if(CMAKE_PROJECT_NAME STREQUAL "myserver")
     option(MUDUO_BUILD_EXAMPLES "Build Muduo examples" ON)
 endif()
 
@@ -104,7 +104,7 @@ string(TOUPPER ${CMAKE_BUILD_TYPE} BUILD_TYPE)
 message(STATUS "CXX_FLAGS = " ${CMAKE_CXX_FLAGS} " " ${CMAKE_CXX_FLAGS_${BUILD_TYPE}})
 
 add_subdirectory(base)
-#add_subdirectory(net)
+add_subdirectory(net)
 
 #if(MUDUO_BUILD_EXAMPLES)
 #    add_subdirectory(contrib)

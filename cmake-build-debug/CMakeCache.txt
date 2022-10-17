@@ -268,6 +268,9 @@ MHD_INCLUDE_DIR:PATH=MHD_INCLUDE_DIR-NOTFOUND
 //Path to a library.
 MHD_LIBRARY:FILEPATH=MHD_LIBRARY-NOTFOUND
 
+//Build Muduo examples
+MUDUO_BUILD_EXAMPLES:BOOL=ON
+
 //pkg-config executable
 PKG_CONFIG_EXECUTABLE:FILEPATH=/usr/bin/pkg-config
 
@@ -336,6 +339,9 @@ myserver_SOURCE_DIR:STATIC=/home/xqm/myserver
 
 //Dependencies for the target
 myserver_base_LIB_DEPENDS:STATIC=general;pthread;general;rt;
+
+//Dependencies for the target
+myserver_net_LIB_DEPENDS:STATIC=general;myserver_base;
 
 
 ########################
@@ -458,7 +464,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=3
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=4
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

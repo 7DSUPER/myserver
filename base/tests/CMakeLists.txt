@@ -22,3 +22,23 @@ target_link_libraries(ThreadPool_test myserver_base)
 
 add_executable(Singleton_test Singleton_test.cpp)
 target_link_libraries(Singleton_test myserver_base)
+
+add_executable(ThreadLocal_test ThreadLocal_test.cpp)
+target_link_libraries(ThreadLocal_test myserver_base)
+
+add_executable(ThreadLocalSingleton_test ThreadLocalSingleton_test.cpp)
+target_link_libraries(ThreadLocalSingleton_test myserver_base)
+
+add_executable(SingletonThreadLocal_test SingletonThreadLocal_test.cpp)
+target_link_libraries(SingletonThreadLocal_test myserver_base)
+
+add_executable(Logging_test Logging_test.cpp)
+target_link_libraries(Logging_test myserver_base)
+
+if(BOOSTTEST_LIBRARY)
+add_executable(LogStream_test LogStream_test.cpp)
+target_link_libraries(LogStream_test myserver_base boost_unit_test_framework)
+endif()
+
+add_executable(LogStream_bench LogStream_bench.cpp)
+target_link_libraries(LogStream_bench myserver_base)

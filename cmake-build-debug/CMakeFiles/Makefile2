@@ -54,16 +54,19 @@ CMAKE_BINARY_DIR = /home/xqm/myserver/cmake-build-debug
 
 # The main recursive "all" target.
 all: base/all
+all: net/all
 
 .PHONY : all
 
 # The main recursive "preinstall" target.
 preinstall: base/preinstall
+preinstall: net/preinstall
 
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: base/clean
+clean: net/clean
 
 .PHONY : clean
 
@@ -92,13 +95,19 @@ base/clean: base/tests/clean
 
 # Recursive "all" directory target.
 base/tests/all: base/tests/CMakeFiles/timestamp_unittest.dir/all
-base/tests/all: base/tests/CMakeFiles/Atomic_unittest.dir/all
+base/tests/all: base/tests/CMakeFiles/LogStream_bench.dir/all
+base/tests/all: base/tests/CMakeFiles/SingletonThreadLocal_test.dir/all
 base/tests/all: base/tests/CMakeFiles/BoundedBlockingQueue_test.dir/all
+base/tests/all: base/tests/CMakeFiles/Atomic_unittest.dir/all
+base/tests/all: base/tests/CMakeFiles/Logging_test.dir/all
 base/tests/all: base/tests/CMakeFiles/Exception_test.dir/all
 base/tests/all: base/tests/CMakeFiles/Thread_test.dir/all
 base/tests/all: base/tests/CMakeFiles/Singleton_test.dir/all
-base/tests/all: base/tests/CMakeFiles/ThreadPool_test.dir/all
 base/tests/all: base/tests/CMakeFiles/BlockingQueue_test.dir/all
+base/tests/all: base/tests/CMakeFiles/ThreadLocal_test.dir/all
+base/tests/all: base/tests/CMakeFiles/ThreadPool_test.dir/all
+base/tests/all: base/tests/CMakeFiles/ThreadLocalSingleton_test.dir/all
+base/tests/all: base/tests/CMakeFiles/LogStream_test.dir/all
 
 .PHONY : base/tests/all
 
@@ -109,15 +118,39 @@ base/tests/preinstall:
 
 # Recursive "clean" directory target.
 base/tests/clean: base/tests/CMakeFiles/timestamp_unittest.dir/clean
-base/tests/clean: base/tests/CMakeFiles/Atomic_unittest.dir/clean
+base/tests/clean: base/tests/CMakeFiles/LogStream_bench.dir/clean
+base/tests/clean: base/tests/CMakeFiles/SingletonThreadLocal_test.dir/clean
 base/tests/clean: base/tests/CMakeFiles/BoundedBlockingQueue_test.dir/clean
+base/tests/clean: base/tests/CMakeFiles/Atomic_unittest.dir/clean
+base/tests/clean: base/tests/CMakeFiles/Logging_test.dir/clean
 base/tests/clean: base/tests/CMakeFiles/Exception_test.dir/clean
 base/tests/clean: base/tests/CMakeFiles/Thread_test.dir/clean
 base/tests/clean: base/tests/CMakeFiles/Singleton_test.dir/clean
-base/tests/clean: base/tests/CMakeFiles/ThreadPool_test.dir/clean
 base/tests/clean: base/tests/CMakeFiles/BlockingQueue_test.dir/clean
+base/tests/clean: base/tests/CMakeFiles/ThreadLocal_test.dir/clean
+base/tests/clean: base/tests/CMakeFiles/ThreadPool_test.dir/clean
+base/tests/clean: base/tests/CMakeFiles/ThreadLocalSingleton_test.dir/clean
+base/tests/clean: base/tests/CMakeFiles/LogStream_test.dir/clean
 
 .PHONY : base/tests/clean
+
+#=============================================================================
+# Directory level rules for directory net
+
+# Recursive "all" directory target.
+net/all: net/CMakeFiles/myserver_net.dir/all
+
+.PHONY : net/all
+
+# Recursive "preinstall" directory target.
+net/preinstall:
+
+.PHONY : net/preinstall
+
+# Recursive "clean" directory target.
+net/clean: net/CMakeFiles/myserver_net.dir/clean
+
+.PHONY : net/clean
 
 #=============================================================================
 # Target rules for target base/CMakeFiles/myserver_base.dir
@@ -126,12 +159,12 @@ base/tests/clean: base/tests/CMakeFiles/BlockingQueue_test.dir/clean
 base/CMakeFiles/myserver_base.dir/all:
 	$(MAKE) -f base/CMakeFiles/myserver_base.dir/build.make base/CMakeFiles/myserver_base.dir/depend
 	$(MAKE) -f base/CMakeFiles/myserver_base.dir/build.make base/CMakeFiles/myserver_base.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xqm/myserver/cmake-build-debug/CMakeFiles --progress-num=15,16,17,18,19,20,21 "Built target myserver_base"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xqm/myserver/cmake-build-debug/CMakeFiles --progress-num=27,28,29,30,31,32,33,34,35,36,37,38 "Built target myserver_base"
 .PHONY : base/CMakeFiles/myserver_base.dir/all
 
 # Build rule for subdir invocation for target.
 base/CMakeFiles/myserver_base.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xqm/myserver/cmake-build-debug/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xqm/myserver/cmake-build-debug/CMakeFiles 12
 	$(MAKE) -f CMakeFiles/Makefile2 base/CMakeFiles/myserver_base.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/xqm/myserver/cmake-build-debug/CMakeFiles 0
 .PHONY : base/CMakeFiles/myserver_base.dir/rule
@@ -153,12 +186,12 @@ base/CMakeFiles/myserver_base.dir/clean:
 base/tests/CMakeFiles/timestamp_unittest.dir/all: base/CMakeFiles/myserver_base.dir/all
 	$(MAKE) -f base/tests/CMakeFiles/timestamp_unittest.dir/build.make base/tests/CMakeFiles/timestamp_unittest.dir/depend
 	$(MAKE) -f base/tests/CMakeFiles/timestamp_unittest.dir/build.make base/tests/CMakeFiles/timestamp_unittest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xqm/myserver/cmake-build-debug/CMakeFiles --progress-num=22,23 "Built target timestamp_unittest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xqm/myserver/cmake-build-debug/CMakeFiles --progress-num=43,44 "Built target timestamp_unittest"
 .PHONY : base/tests/CMakeFiles/timestamp_unittest.dir/all
 
 # Build rule for subdir invocation for target.
 base/tests/CMakeFiles/timestamp_unittest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xqm/myserver/cmake-build-debug/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xqm/myserver/cmake-build-debug/CMakeFiles 14
 	$(MAKE) -f CMakeFiles/Makefile2 base/tests/CMakeFiles/timestamp_unittest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/xqm/myserver/cmake-build-debug/CMakeFiles 0
 .PHONY : base/tests/CMakeFiles/timestamp_unittest.dir/rule
@@ -174,31 +207,58 @@ base/tests/CMakeFiles/timestamp_unittest.dir/clean:
 .PHONY : base/tests/CMakeFiles/timestamp_unittest.dir/clean
 
 #=============================================================================
-# Target rules for target base/tests/CMakeFiles/Atomic_unittest.dir
+# Target rules for target base/tests/CMakeFiles/LogStream_bench.dir
 
 # All Build rule for target.
-base/tests/CMakeFiles/Atomic_unittest.dir/all: base/CMakeFiles/myserver_base.dir/all
-	$(MAKE) -f base/tests/CMakeFiles/Atomic_unittest.dir/build.make base/tests/CMakeFiles/Atomic_unittest.dir/depend
-	$(MAKE) -f base/tests/CMakeFiles/Atomic_unittest.dir/build.make base/tests/CMakeFiles/Atomic_unittest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xqm/myserver/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target Atomic_unittest"
-.PHONY : base/tests/CMakeFiles/Atomic_unittest.dir/all
+base/tests/CMakeFiles/LogStream_bench.dir/all: base/CMakeFiles/myserver_base.dir/all
+	$(MAKE) -f base/tests/CMakeFiles/LogStream_bench.dir/build.make base/tests/CMakeFiles/LogStream_bench.dir/depend
+	$(MAKE) -f base/tests/CMakeFiles/LogStream_bench.dir/build.make base/tests/CMakeFiles/LogStream_bench.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xqm/myserver/cmake-build-debug/CMakeFiles --progress-num=9,10 "Built target LogStream_bench"
+.PHONY : base/tests/CMakeFiles/LogStream_bench.dir/all
 
 # Build rule for subdir invocation for target.
-base/tests/CMakeFiles/Atomic_unittest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xqm/myserver/cmake-build-debug/CMakeFiles 9
-	$(MAKE) -f CMakeFiles/Makefile2 base/tests/CMakeFiles/Atomic_unittest.dir/all
+base/tests/CMakeFiles/LogStream_bench.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xqm/myserver/cmake-build-debug/CMakeFiles 14
+	$(MAKE) -f CMakeFiles/Makefile2 base/tests/CMakeFiles/LogStream_bench.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/xqm/myserver/cmake-build-debug/CMakeFiles 0
-.PHONY : base/tests/CMakeFiles/Atomic_unittest.dir/rule
+.PHONY : base/tests/CMakeFiles/LogStream_bench.dir/rule
 
 # Convenience name for target.
-Atomic_unittest: base/tests/CMakeFiles/Atomic_unittest.dir/rule
+LogStream_bench: base/tests/CMakeFiles/LogStream_bench.dir/rule
 
-.PHONY : Atomic_unittest
+.PHONY : LogStream_bench
 
 # clean rule for target.
-base/tests/CMakeFiles/Atomic_unittest.dir/clean:
-	$(MAKE) -f base/tests/CMakeFiles/Atomic_unittest.dir/build.make base/tests/CMakeFiles/Atomic_unittest.dir/clean
-.PHONY : base/tests/CMakeFiles/Atomic_unittest.dir/clean
+base/tests/CMakeFiles/LogStream_bench.dir/clean:
+	$(MAKE) -f base/tests/CMakeFiles/LogStream_bench.dir/build.make base/tests/CMakeFiles/LogStream_bench.dir/clean
+.PHONY : base/tests/CMakeFiles/LogStream_bench.dir/clean
+
+#=============================================================================
+# Target rules for target base/tests/CMakeFiles/SingletonThreadLocal_test.dir
+
+# All Build rule for target.
+base/tests/CMakeFiles/SingletonThreadLocal_test.dir/all: base/CMakeFiles/myserver_base.dir/all
+	$(MAKE) -f base/tests/CMakeFiles/SingletonThreadLocal_test.dir/build.make base/tests/CMakeFiles/SingletonThreadLocal_test.dir/depend
+	$(MAKE) -f base/tests/CMakeFiles/SingletonThreadLocal_test.dir/build.make base/tests/CMakeFiles/SingletonThreadLocal_test.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xqm/myserver/cmake-build-debug/CMakeFiles --progress-num=15,16 "Built target SingletonThreadLocal_test"
+.PHONY : base/tests/CMakeFiles/SingletonThreadLocal_test.dir/all
+
+# Build rule for subdir invocation for target.
+base/tests/CMakeFiles/SingletonThreadLocal_test.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xqm/myserver/cmake-build-debug/CMakeFiles 14
+	$(MAKE) -f CMakeFiles/Makefile2 base/tests/CMakeFiles/SingletonThreadLocal_test.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xqm/myserver/cmake-build-debug/CMakeFiles 0
+.PHONY : base/tests/CMakeFiles/SingletonThreadLocal_test.dir/rule
+
+# Convenience name for target.
+SingletonThreadLocal_test: base/tests/CMakeFiles/SingletonThreadLocal_test.dir/rule
+
+.PHONY : SingletonThreadLocal_test
+
+# clean rule for target.
+base/tests/CMakeFiles/SingletonThreadLocal_test.dir/clean:
+	$(MAKE) -f base/tests/CMakeFiles/SingletonThreadLocal_test.dir/build.make base/tests/CMakeFiles/SingletonThreadLocal_test.dir/clean
+.PHONY : base/tests/CMakeFiles/SingletonThreadLocal_test.dir/clean
 
 #=============================================================================
 # Target rules for target base/tests/CMakeFiles/BoundedBlockingQueue_test.dir
@@ -212,7 +272,7 @@ base/tests/CMakeFiles/BoundedBlockingQueue_test.dir/all: base/CMakeFiles/myserve
 
 # Build rule for subdir invocation for target.
 base/tests/CMakeFiles/BoundedBlockingQueue_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xqm/myserver/cmake-build-debug/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xqm/myserver/cmake-build-debug/CMakeFiles 14
 	$(MAKE) -f CMakeFiles/Makefile2 base/tests/CMakeFiles/BoundedBlockingQueue_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/xqm/myserver/cmake-build-debug/CMakeFiles 0
 .PHONY : base/tests/CMakeFiles/BoundedBlockingQueue_test.dir/rule
@@ -228,6 +288,60 @@ base/tests/CMakeFiles/BoundedBlockingQueue_test.dir/clean:
 .PHONY : base/tests/CMakeFiles/BoundedBlockingQueue_test.dir/clean
 
 #=============================================================================
+# Target rules for target base/tests/CMakeFiles/Atomic_unittest.dir
+
+# All Build rule for target.
+base/tests/CMakeFiles/Atomic_unittest.dir/all: base/CMakeFiles/myserver_base.dir/all
+	$(MAKE) -f base/tests/CMakeFiles/Atomic_unittest.dir/build.make base/tests/CMakeFiles/Atomic_unittest.dir/depend
+	$(MAKE) -f base/tests/CMakeFiles/Atomic_unittest.dir/build.make base/tests/CMakeFiles/Atomic_unittest.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xqm/myserver/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target Atomic_unittest"
+.PHONY : base/tests/CMakeFiles/Atomic_unittest.dir/all
+
+# Build rule for subdir invocation for target.
+base/tests/CMakeFiles/Atomic_unittest.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xqm/myserver/cmake-build-debug/CMakeFiles 14
+	$(MAKE) -f CMakeFiles/Makefile2 base/tests/CMakeFiles/Atomic_unittest.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xqm/myserver/cmake-build-debug/CMakeFiles 0
+.PHONY : base/tests/CMakeFiles/Atomic_unittest.dir/rule
+
+# Convenience name for target.
+Atomic_unittest: base/tests/CMakeFiles/Atomic_unittest.dir/rule
+
+.PHONY : Atomic_unittest
+
+# clean rule for target.
+base/tests/CMakeFiles/Atomic_unittest.dir/clean:
+	$(MAKE) -f base/tests/CMakeFiles/Atomic_unittest.dir/build.make base/tests/CMakeFiles/Atomic_unittest.dir/clean
+.PHONY : base/tests/CMakeFiles/Atomic_unittest.dir/clean
+
+#=============================================================================
+# Target rules for target base/tests/CMakeFiles/Logging_test.dir
+
+# All Build rule for target.
+base/tests/CMakeFiles/Logging_test.dir/all: base/CMakeFiles/myserver_base.dir/all
+	$(MAKE) -f base/tests/CMakeFiles/Logging_test.dir/build.make base/tests/CMakeFiles/Logging_test.dir/depend
+	$(MAKE) -f base/tests/CMakeFiles/Logging_test.dir/build.make base/tests/CMakeFiles/Logging_test.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xqm/myserver/cmake-build-debug/CMakeFiles --progress-num=13,14 "Built target Logging_test"
+.PHONY : base/tests/CMakeFiles/Logging_test.dir/all
+
+# Build rule for subdir invocation for target.
+base/tests/CMakeFiles/Logging_test.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xqm/myserver/cmake-build-debug/CMakeFiles 14
+	$(MAKE) -f CMakeFiles/Makefile2 base/tests/CMakeFiles/Logging_test.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xqm/myserver/cmake-build-debug/CMakeFiles 0
+.PHONY : base/tests/CMakeFiles/Logging_test.dir/rule
+
+# Convenience name for target.
+Logging_test: base/tests/CMakeFiles/Logging_test.dir/rule
+
+.PHONY : Logging_test
+
+# clean rule for target.
+base/tests/CMakeFiles/Logging_test.dir/clean:
+	$(MAKE) -f base/tests/CMakeFiles/Logging_test.dir/build.make base/tests/CMakeFiles/Logging_test.dir/clean
+.PHONY : base/tests/CMakeFiles/Logging_test.dir/clean
+
+#=============================================================================
 # Target rules for target base/tests/CMakeFiles/Exception_test.dir
 
 # All Build rule for target.
@@ -239,7 +353,7 @@ base/tests/CMakeFiles/Exception_test.dir/all: base/CMakeFiles/myserver_base.dir/
 
 # Build rule for subdir invocation for target.
 base/tests/CMakeFiles/Exception_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xqm/myserver/cmake-build-debug/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xqm/myserver/cmake-build-debug/CMakeFiles 14
 	$(MAKE) -f CMakeFiles/Makefile2 base/tests/CMakeFiles/Exception_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/xqm/myserver/cmake-build-debug/CMakeFiles 0
 .PHONY : base/tests/CMakeFiles/Exception_test.dir/rule
@@ -261,12 +375,12 @@ base/tests/CMakeFiles/Exception_test.dir/clean:
 base/tests/CMakeFiles/Thread_test.dir/all: base/CMakeFiles/myserver_base.dir/all
 	$(MAKE) -f base/tests/CMakeFiles/Thread_test.dir/build.make base/tests/CMakeFiles/Thread_test.dir/depend
 	$(MAKE) -f base/tests/CMakeFiles/Thread_test.dir/build.make base/tests/CMakeFiles/Thread_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xqm/myserver/cmake-build-debug/CMakeFiles --progress-num=13,14 "Built target Thread_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xqm/myserver/cmake-build-debug/CMakeFiles --progress-num=25,26 "Built target Thread_test"
 .PHONY : base/tests/CMakeFiles/Thread_test.dir/all
 
 # Build rule for subdir invocation for target.
 base/tests/CMakeFiles/Thread_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xqm/myserver/cmake-build-debug/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xqm/myserver/cmake-build-debug/CMakeFiles 14
 	$(MAKE) -f CMakeFiles/Makefile2 base/tests/CMakeFiles/Thread_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/xqm/myserver/cmake-build-debug/CMakeFiles 0
 .PHONY : base/tests/CMakeFiles/Thread_test.dir/rule
@@ -288,12 +402,12 @@ base/tests/CMakeFiles/Thread_test.dir/clean:
 base/tests/CMakeFiles/Singleton_test.dir/all: base/CMakeFiles/myserver_base.dir/all
 	$(MAKE) -f base/tests/CMakeFiles/Singleton_test.dir/build.make base/tests/CMakeFiles/Singleton_test.dir/depend
 	$(MAKE) -f base/tests/CMakeFiles/Singleton_test.dir/build.make base/tests/CMakeFiles/Singleton_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xqm/myserver/cmake-build-debug/CMakeFiles --progress-num=9,10 "Built target Singleton_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xqm/myserver/cmake-build-debug/CMakeFiles --progress-num=17,18 "Built target Singleton_test"
 .PHONY : base/tests/CMakeFiles/Singleton_test.dir/all
 
 # Build rule for subdir invocation for target.
 base/tests/CMakeFiles/Singleton_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xqm/myserver/cmake-build-debug/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xqm/myserver/cmake-build-debug/CMakeFiles 14
 	$(MAKE) -f CMakeFiles/Makefile2 base/tests/CMakeFiles/Singleton_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/xqm/myserver/cmake-build-debug/CMakeFiles 0
 .PHONY : base/tests/CMakeFiles/Singleton_test.dir/rule
@@ -309,18 +423,72 @@ base/tests/CMakeFiles/Singleton_test.dir/clean:
 .PHONY : base/tests/CMakeFiles/Singleton_test.dir/clean
 
 #=============================================================================
+# Target rules for target base/tests/CMakeFiles/BlockingQueue_test.dir
+
+# All Build rule for target.
+base/tests/CMakeFiles/BlockingQueue_test.dir/all: base/CMakeFiles/myserver_base.dir/all
+	$(MAKE) -f base/tests/CMakeFiles/BlockingQueue_test.dir/build.make base/tests/CMakeFiles/BlockingQueue_test.dir/depend
+	$(MAKE) -f base/tests/CMakeFiles/BlockingQueue_test.dir/build.make base/tests/CMakeFiles/BlockingQueue_test.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xqm/myserver/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target BlockingQueue_test"
+.PHONY : base/tests/CMakeFiles/BlockingQueue_test.dir/all
+
+# Build rule for subdir invocation for target.
+base/tests/CMakeFiles/BlockingQueue_test.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xqm/myserver/cmake-build-debug/CMakeFiles 14
+	$(MAKE) -f CMakeFiles/Makefile2 base/tests/CMakeFiles/BlockingQueue_test.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xqm/myserver/cmake-build-debug/CMakeFiles 0
+.PHONY : base/tests/CMakeFiles/BlockingQueue_test.dir/rule
+
+# Convenience name for target.
+BlockingQueue_test: base/tests/CMakeFiles/BlockingQueue_test.dir/rule
+
+.PHONY : BlockingQueue_test
+
+# clean rule for target.
+base/tests/CMakeFiles/BlockingQueue_test.dir/clean:
+	$(MAKE) -f base/tests/CMakeFiles/BlockingQueue_test.dir/build.make base/tests/CMakeFiles/BlockingQueue_test.dir/clean
+.PHONY : base/tests/CMakeFiles/BlockingQueue_test.dir/clean
+
+#=============================================================================
+# Target rules for target base/tests/CMakeFiles/ThreadLocal_test.dir
+
+# All Build rule for target.
+base/tests/CMakeFiles/ThreadLocal_test.dir/all: base/CMakeFiles/myserver_base.dir/all
+	$(MAKE) -f base/tests/CMakeFiles/ThreadLocal_test.dir/build.make base/tests/CMakeFiles/ThreadLocal_test.dir/depend
+	$(MAKE) -f base/tests/CMakeFiles/ThreadLocal_test.dir/build.make base/tests/CMakeFiles/ThreadLocal_test.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xqm/myserver/cmake-build-debug/CMakeFiles --progress-num=21,22 "Built target ThreadLocal_test"
+.PHONY : base/tests/CMakeFiles/ThreadLocal_test.dir/all
+
+# Build rule for subdir invocation for target.
+base/tests/CMakeFiles/ThreadLocal_test.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xqm/myserver/cmake-build-debug/CMakeFiles 14
+	$(MAKE) -f CMakeFiles/Makefile2 base/tests/CMakeFiles/ThreadLocal_test.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xqm/myserver/cmake-build-debug/CMakeFiles 0
+.PHONY : base/tests/CMakeFiles/ThreadLocal_test.dir/rule
+
+# Convenience name for target.
+ThreadLocal_test: base/tests/CMakeFiles/ThreadLocal_test.dir/rule
+
+.PHONY : ThreadLocal_test
+
+# clean rule for target.
+base/tests/CMakeFiles/ThreadLocal_test.dir/clean:
+	$(MAKE) -f base/tests/CMakeFiles/ThreadLocal_test.dir/build.make base/tests/CMakeFiles/ThreadLocal_test.dir/clean
+.PHONY : base/tests/CMakeFiles/ThreadLocal_test.dir/clean
+
+#=============================================================================
 # Target rules for target base/tests/CMakeFiles/ThreadPool_test.dir
 
 # All Build rule for target.
 base/tests/CMakeFiles/ThreadPool_test.dir/all: base/CMakeFiles/myserver_base.dir/all
 	$(MAKE) -f base/tests/CMakeFiles/ThreadPool_test.dir/build.make base/tests/CMakeFiles/ThreadPool_test.dir/depend
 	$(MAKE) -f base/tests/CMakeFiles/ThreadPool_test.dir/build.make base/tests/CMakeFiles/ThreadPool_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xqm/myserver/cmake-build-debug/CMakeFiles --progress-num=11,12 "Built target ThreadPool_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xqm/myserver/cmake-build-debug/CMakeFiles --progress-num=23,24 "Built target ThreadPool_test"
 .PHONY : base/tests/CMakeFiles/ThreadPool_test.dir/all
 
 # Build rule for subdir invocation for target.
 base/tests/CMakeFiles/ThreadPool_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xqm/myserver/cmake-build-debug/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xqm/myserver/cmake-build-debug/CMakeFiles 14
 	$(MAKE) -f CMakeFiles/Makefile2 base/tests/CMakeFiles/ThreadPool_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/xqm/myserver/cmake-build-debug/CMakeFiles 0
 .PHONY : base/tests/CMakeFiles/ThreadPool_test.dir/rule
@@ -336,31 +504,85 @@ base/tests/CMakeFiles/ThreadPool_test.dir/clean:
 .PHONY : base/tests/CMakeFiles/ThreadPool_test.dir/clean
 
 #=============================================================================
-# Target rules for target base/tests/CMakeFiles/BlockingQueue_test.dir
+# Target rules for target base/tests/CMakeFiles/ThreadLocalSingleton_test.dir
 
 # All Build rule for target.
-base/tests/CMakeFiles/BlockingQueue_test.dir/all: base/CMakeFiles/myserver_base.dir/all
-	$(MAKE) -f base/tests/CMakeFiles/BlockingQueue_test.dir/build.make base/tests/CMakeFiles/BlockingQueue_test.dir/depend
-	$(MAKE) -f base/tests/CMakeFiles/BlockingQueue_test.dir/build.make base/tests/CMakeFiles/BlockingQueue_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xqm/myserver/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target BlockingQueue_test"
-.PHONY : base/tests/CMakeFiles/BlockingQueue_test.dir/all
+base/tests/CMakeFiles/ThreadLocalSingleton_test.dir/all: base/CMakeFiles/myserver_base.dir/all
+	$(MAKE) -f base/tests/CMakeFiles/ThreadLocalSingleton_test.dir/build.make base/tests/CMakeFiles/ThreadLocalSingleton_test.dir/depend
+	$(MAKE) -f base/tests/CMakeFiles/ThreadLocalSingleton_test.dir/build.make base/tests/CMakeFiles/ThreadLocalSingleton_test.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xqm/myserver/cmake-build-debug/CMakeFiles --progress-num=19,20 "Built target ThreadLocalSingleton_test"
+.PHONY : base/tests/CMakeFiles/ThreadLocalSingleton_test.dir/all
 
 # Build rule for subdir invocation for target.
-base/tests/CMakeFiles/BlockingQueue_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xqm/myserver/cmake-build-debug/CMakeFiles 9
-	$(MAKE) -f CMakeFiles/Makefile2 base/tests/CMakeFiles/BlockingQueue_test.dir/all
+base/tests/CMakeFiles/ThreadLocalSingleton_test.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xqm/myserver/cmake-build-debug/CMakeFiles 14
+	$(MAKE) -f CMakeFiles/Makefile2 base/tests/CMakeFiles/ThreadLocalSingleton_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/xqm/myserver/cmake-build-debug/CMakeFiles 0
-.PHONY : base/tests/CMakeFiles/BlockingQueue_test.dir/rule
+.PHONY : base/tests/CMakeFiles/ThreadLocalSingleton_test.dir/rule
 
 # Convenience name for target.
-BlockingQueue_test: base/tests/CMakeFiles/BlockingQueue_test.dir/rule
+ThreadLocalSingleton_test: base/tests/CMakeFiles/ThreadLocalSingleton_test.dir/rule
 
-.PHONY : BlockingQueue_test
+.PHONY : ThreadLocalSingleton_test
 
 # clean rule for target.
-base/tests/CMakeFiles/BlockingQueue_test.dir/clean:
-	$(MAKE) -f base/tests/CMakeFiles/BlockingQueue_test.dir/build.make base/tests/CMakeFiles/BlockingQueue_test.dir/clean
-.PHONY : base/tests/CMakeFiles/BlockingQueue_test.dir/clean
+base/tests/CMakeFiles/ThreadLocalSingleton_test.dir/clean:
+	$(MAKE) -f base/tests/CMakeFiles/ThreadLocalSingleton_test.dir/build.make base/tests/CMakeFiles/ThreadLocalSingleton_test.dir/clean
+.PHONY : base/tests/CMakeFiles/ThreadLocalSingleton_test.dir/clean
+
+#=============================================================================
+# Target rules for target base/tests/CMakeFiles/LogStream_test.dir
+
+# All Build rule for target.
+base/tests/CMakeFiles/LogStream_test.dir/all: base/CMakeFiles/myserver_base.dir/all
+	$(MAKE) -f base/tests/CMakeFiles/LogStream_test.dir/build.make base/tests/CMakeFiles/LogStream_test.dir/depend
+	$(MAKE) -f base/tests/CMakeFiles/LogStream_test.dir/build.make base/tests/CMakeFiles/LogStream_test.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xqm/myserver/cmake-build-debug/CMakeFiles --progress-num=11,12 "Built target LogStream_test"
+.PHONY : base/tests/CMakeFiles/LogStream_test.dir/all
+
+# Build rule for subdir invocation for target.
+base/tests/CMakeFiles/LogStream_test.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xqm/myserver/cmake-build-debug/CMakeFiles 14
+	$(MAKE) -f CMakeFiles/Makefile2 base/tests/CMakeFiles/LogStream_test.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xqm/myserver/cmake-build-debug/CMakeFiles 0
+.PHONY : base/tests/CMakeFiles/LogStream_test.dir/rule
+
+# Convenience name for target.
+LogStream_test: base/tests/CMakeFiles/LogStream_test.dir/rule
+
+.PHONY : LogStream_test
+
+# clean rule for target.
+base/tests/CMakeFiles/LogStream_test.dir/clean:
+	$(MAKE) -f base/tests/CMakeFiles/LogStream_test.dir/build.make base/tests/CMakeFiles/LogStream_test.dir/clean
+.PHONY : base/tests/CMakeFiles/LogStream_test.dir/clean
+
+#=============================================================================
+# Target rules for target net/CMakeFiles/myserver_net.dir
+
+# All Build rule for target.
+net/CMakeFiles/myserver_net.dir/all: base/CMakeFiles/myserver_base.dir/all
+	$(MAKE) -f net/CMakeFiles/myserver_net.dir/build.make net/CMakeFiles/myserver_net.dir/depend
+	$(MAKE) -f net/CMakeFiles/myserver_net.dir/build.make net/CMakeFiles/myserver_net.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xqm/myserver/cmake-build-debug/CMakeFiles --progress-num=39,40,41,42 "Built target myserver_net"
+.PHONY : net/CMakeFiles/myserver_net.dir/all
+
+# Build rule for subdir invocation for target.
+net/CMakeFiles/myserver_net.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xqm/myserver/cmake-build-debug/CMakeFiles 16
+	$(MAKE) -f CMakeFiles/Makefile2 net/CMakeFiles/myserver_net.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xqm/myserver/cmake-build-debug/CMakeFiles 0
+.PHONY : net/CMakeFiles/myserver_net.dir/rule
+
+# Convenience name for target.
+myserver_net: net/CMakeFiles/myserver_net.dir/rule
+
+.PHONY : myserver_net
+
+# clean rule for target.
+net/CMakeFiles/myserver_net.dir/clean:
+	$(MAKE) -f net/CMakeFiles/myserver_net.dir/build.make net/CMakeFiles/myserver_net.dir/clean
+.PHONY : net/CMakeFiles/myserver_net.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

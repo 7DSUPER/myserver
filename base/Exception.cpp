@@ -15,7 +15,7 @@ Exception::Exception(const char *what)
     fillStackTrace();
 }
 
-Exception::Exception(std::string what)
+Exception::Exception(string what)
     :   message_(std::move(what))
 {
     fillStackTrace();

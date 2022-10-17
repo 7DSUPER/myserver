@@ -22,6 +22,49 @@ base/CMakeFiles/myserver_base.dir/Exception.cpp.o
  /home/xqm/myserver/base/Exception.cpp
  /home/xqm/myserver/base/Exception.h
  /home/xqm/myserver/base/Types.h
+base/CMakeFiles/myserver_base.dir/FileUtil.cpp.o
+ /home/xqm/myserver/base/FileUtil.cpp
+ /home/xqm/myserver/base/FileUtil.h
+ /home/xqm/myserver/base/StringPiece.h
+ /home/xqm/myserver/base/Types.h
+ /home/xqm/myserver/base/noncopyable.h
+base/CMakeFiles/myserver_base.dir/LogFile.cpp.o
+ /home/xqm/myserver/base/Atomic.h
+ /home/xqm/myserver/base/CurrentThread.h
+ /home/xqm/myserver/base/LogFile.cpp
+ /home/xqm/myserver/base/LogFile.h
+ /home/xqm/myserver/base/LogStream.h
+ /home/xqm/myserver/base/Logging.h
+ /home/xqm/myserver/base/Mutex.h
+ /home/xqm/myserver/base/ProcessInfo.h
+ /home/xqm/myserver/base/StringPiece.h
+ /home/xqm/myserver/base/Thread.h
+ /home/xqm/myserver/base/Timestamp.h
+ /home/xqm/myserver/base/Types.h
+ /home/xqm/myserver/base/copyable.h
+ /home/xqm/myserver/base/noncopyable.h
+base/CMakeFiles/myserver_base.dir/LogStream.cpp.o
+ /home/xqm/myserver/base/LogStream.cpp
+ /home/xqm/myserver/base/LogStream.h
+ /home/xqm/myserver/base/StringPiece.h
+ /home/xqm/myserver/base/Types.h
+ /home/xqm/myserver/base/noncopyable.h
+base/CMakeFiles/myserver_base.dir/Logging.cpp.o
+ /home/xqm/myserver/base/CurrentThread.h
+ /home/xqm/myserver/base/LogStream.h
+ /home/xqm/myserver/base/Logging.cpp
+ /home/xqm/myserver/base/Logging.h
+ /home/xqm/myserver/base/StringPiece.h
+ /home/xqm/myserver/base/Timestamp.h
+ /home/xqm/myserver/base/Types.h
+ /home/xqm/myserver/base/copyable.h
+ /home/xqm/myserver/base/noncopyable.h
+base/CMakeFiles/myserver_base.dir/ProcessInfo.cpp.o
+ /home/xqm/myserver/base/ProcessInfo.cpp
+ /home/xqm/myserver/base/ProcessInfo.h
+ /home/xqm/myserver/base/Timestamp.h
+ /home/xqm/myserver/base/Types.h
+ /home/xqm/myserver/base/copyable.h
 base/CMakeFiles/myserver_base.dir/Thread.cpp.o
  /home/xqm/myserver/base/Atomic.h
  /home/xqm/myserver/base/CurrentThread.h

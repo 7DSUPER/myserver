@@ -263,6 +263,141 @@ Exception.cpp.s:
 	cd /home/xqm/myserver/cmake-build-debug && $(MAKE) -f base/CMakeFiles/myserver_base.dir/build.make base/CMakeFiles/myserver_base.dir/Exception.cpp.s
 .PHONY : Exception.cpp.s
 
+FileUtil.o: FileUtil.cpp.o
+
+.PHONY : FileUtil.o
+
+# target to build an object file
+FileUtil.cpp.o:
+	cd /home/xqm/myserver/cmake-build-debug && $(MAKE) -f base/CMakeFiles/myserver_base.dir/build.make base/CMakeFiles/myserver_base.dir/FileUtil.cpp.o
+.PHONY : FileUtil.cpp.o
+
+FileUtil.i: FileUtil.cpp.i
+
+.PHONY : FileUtil.i
+
+# target to preprocess a source file
+FileUtil.cpp.i:
+	cd /home/xqm/myserver/cmake-build-debug && $(MAKE) -f base/CMakeFiles/myserver_base.dir/build.make base/CMakeFiles/myserver_base.dir/FileUtil.cpp.i
+.PHONY : FileUtil.cpp.i
+
+FileUtil.s: FileUtil.cpp.s
+
+.PHONY : FileUtil.s
+
+# target to generate assembly for a file
+FileUtil.cpp.s:
+	cd /home/xqm/myserver/cmake-build-debug && $(MAKE) -f base/CMakeFiles/myserver_base.dir/build.make base/CMakeFiles/myserver_base.dir/FileUtil.cpp.s
+.PHONY : FileUtil.cpp.s
+
+LogFile.o: LogFile.cpp.o
+
+.PHONY : LogFile.o
+
+# target to build an object file
+LogFile.cpp.o:
+	cd /home/xqm/myserver/cmake-build-debug && $(MAKE) -f base/CMakeFiles/myserver_base.dir/build.make base/CMakeFiles/myserver_base.dir/LogFile.cpp.o
+.PHONY : LogFile.cpp.o
+
+LogFile.i: LogFile.cpp.i
+
+.PHONY : LogFile.i
+
+# target to preprocess a source file
+LogFile.cpp.i:
+	cd /home/xqm/myserver/cmake-build-debug && $(MAKE) -f base/CMakeFiles/myserver_base.dir/build.make base/CMakeFiles/myserver_base.dir/LogFile.cpp.i
+.PHONY : LogFile.cpp.i
+
+LogFile.s: LogFile.cpp.s
+
+.PHONY : LogFile.s
+
+# target to generate assembly for a file
+LogFile.cpp.s:
+	cd /home/xqm/myserver/cmake-build-debug && $(MAKE) -f base/CMakeFiles/myserver_base.dir/build.make base/CMakeFiles/myserver_base.dir/LogFile.cpp.s
+.PHONY : LogFile.cpp.s
+
+LogStream.o: LogStream.cpp.o
+
+.PHONY : LogStream.o
+
+# target to build an object file
+LogStream.cpp.o:
+	cd /home/xqm/myserver/cmake-build-debug && $(MAKE) -f base/CMakeFiles/myserver_base.dir/build.make base/CMakeFiles/myserver_base.dir/LogStream.cpp.o
+.PHONY : LogStream.cpp.o
+
+LogStream.i: LogStream.cpp.i
+
+.PHONY : LogStream.i
+
+# target to preprocess a source file
+LogStream.cpp.i:
+	cd /home/xqm/myserver/cmake-build-debug && $(MAKE) -f base/CMakeFiles/myserver_base.dir/build.make base/CMakeFiles/myserver_base.dir/LogStream.cpp.i
+.PHONY : LogStream.cpp.i
+
+LogStream.s: LogStream.cpp.s
+
+.PHONY : LogStream.s
+
+# target to generate assembly for a file
+LogStream.cpp.s:
+	cd /home/xqm/myserver/cmake-build-debug && $(MAKE) -f base/CMakeFiles/myserver_base.dir/build.make base/CMakeFiles/myserver_base.dir/LogStream.cpp.s
+.PHONY : LogStream.cpp.s
+
+Logging.o: Logging.cpp.o
+
+.PHONY : Logging.o
+
+# target to build an object file
+Logging.cpp.o:
+	cd /home/xqm/myserver/cmake-build-debug && $(MAKE) -f base/CMakeFiles/myserver_base.dir/build.make base/CMakeFiles/myserver_base.dir/Logging.cpp.o
+.PHONY : Logging.cpp.o
+
+Logging.i: Logging.cpp.i
+
+.PHONY : Logging.i
+
+# target to preprocess a source file
+Logging.cpp.i:
+	cd /home/xqm/myserver/cmake-build-debug && $(MAKE) -f base/CMakeFiles/myserver_base.dir/build.make base/CMakeFiles/myserver_base.dir/Logging.cpp.i
+.PHONY : Logging.cpp.i
+
+Logging.s: Logging.cpp.s
+
+.PHONY : Logging.s
+
+# target to generate assembly for a file
+Logging.cpp.s:
+	cd /home/xqm/myserver/cmake-build-debug && $(MAKE) -f base/CMakeFiles/myserver_base.dir/build.make base/CMakeFiles/myserver_base.dir/Logging.cpp.s
+.PHONY : Logging.cpp.s
+
+ProcessInfo.o: ProcessInfo.cpp.o
+
+.PHONY : ProcessInfo.o
+
+# target to build an object file
+ProcessInfo.cpp.o:
+	cd /home/xqm/myserver/cmake-build-debug && $(MAKE) -f base/CMakeFiles/myserver_base.dir/build.make base/CMakeFiles/myserver_base.dir/ProcessInfo.cpp.o
+.PHONY : ProcessInfo.cpp.o
+
+ProcessInfo.i: ProcessInfo.cpp.i
+
+.PHONY : ProcessInfo.i
+
+# target to preprocess a source file
+ProcessInfo.cpp.i:
+	cd /home/xqm/myserver/cmake-build-debug && $(MAKE) -f base/CMakeFiles/myserver_base.dir/build.make base/CMakeFiles/myserver_base.dir/ProcessInfo.cpp.i
+.PHONY : ProcessInfo.cpp.i
+
+ProcessInfo.s: ProcessInfo.cpp.s
+
+.PHONY : ProcessInfo.s
+
+# target to generate assembly for a file
+ProcessInfo.cpp.s:
+	cd /home/xqm/myserver/cmake-build-debug && $(MAKE) -f base/CMakeFiles/myserver_base.dir/build.make base/CMakeFiles/myserver_base.dir/ProcessInfo.cpp.s
+.PHONY : ProcessInfo.cpp.s
+
 Thread.o: Thread.cpp.o
 
 .PHONY : Thread.o
@@ -367,6 +502,21 @@ help:
 	@echo "... Exception.o"
 	@echo "... Exception.i"
 	@echo "... Exception.s"
+	@echo "... FileUtil.o"
+	@echo "... FileUtil.i"
+	@echo "... FileUtil.s"
+	@echo "... LogFile.o"
+	@echo "... LogFile.i"
+	@echo "... LogFile.s"
+	@echo "... LogStream.o"
+	@echo "... LogStream.i"
+	@echo "... LogStream.s"
+	@echo "... Logging.o"
+	@echo "... Logging.i"
+	@echo "... Logging.s"
+	@echo "... ProcessInfo.o"
+	@echo "... ProcessInfo.i"
+	@echo "... ProcessInfo.s"
 	@echo "... Thread.o"
 	@echo "... Thread.i"
 	@echo "... Thread.s"

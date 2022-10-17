@@ -194,17 +194,30 @@ timestamp_unittest/fast:
 .PHONY : timestamp_unittest/fast
 
 #=============================================================================
-# Target rules for targets named Atomic_unittest
+# Target rules for targets named LogStream_bench
 
 # Build rule for target.
-Atomic_unittest: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Atomic_unittest
-.PHONY : Atomic_unittest
+LogStream_bench: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 LogStream_bench
+.PHONY : LogStream_bench
 
 # fast build rule for target.
-Atomic_unittest/fast:
-	$(MAKE) -f base/tests/CMakeFiles/Atomic_unittest.dir/build.make base/tests/CMakeFiles/Atomic_unittest.dir/build
-.PHONY : Atomic_unittest/fast
+LogStream_bench/fast:
+	$(MAKE) -f base/tests/CMakeFiles/LogStream_bench.dir/build.make base/tests/CMakeFiles/LogStream_bench.dir/build
+.PHONY : LogStream_bench/fast
+
+#=============================================================================
+# Target rules for targets named SingletonThreadLocal_test
+
+# Build rule for target.
+SingletonThreadLocal_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 SingletonThreadLocal_test
+.PHONY : SingletonThreadLocal_test
+
+# fast build rule for target.
+SingletonThreadLocal_test/fast:
+	$(MAKE) -f base/tests/CMakeFiles/SingletonThreadLocal_test.dir/build.make base/tests/CMakeFiles/SingletonThreadLocal_test.dir/build
+.PHONY : SingletonThreadLocal_test/fast
 
 #=============================================================================
 # Target rules for targets named BoundedBlockingQueue_test
@@ -218,6 +231,32 @@ BoundedBlockingQueue_test: cmake_check_build_system
 BoundedBlockingQueue_test/fast:
 	$(MAKE) -f base/tests/CMakeFiles/BoundedBlockingQueue_test.dir/build.make base/tests/CMakeFiles/BoundedBlockingQueue_test.dir/build
 .PHONY : BoundedBlockingQueue_test/fast
+
+#=============================================================================
+# Target rules for targets named Atomic_unittest
+
+# Build rule for target.
+Atomic_unittest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Atomic_unittest
+.PHONY : Atomic_unittest
+
+# fast build rule for target.
+Atomic_unittest/fast:
+	$(MAKE) -f base/tests/CMakeFiles/Atomic_unittest.dir/build.make base/tests/CMakeFiles/Atomic_unittest.dir/build
+.PHONY : Atomic_unittest/fast
+
+#=============================================================================
+# Target rules for targets named Logging_test
+
+# Build rule for target.
+Logging_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Logging_test
+.PHONY : Logging_test
+
+# fast build rule for target.
+Logging_test/fast:
+	$(MAKE) -f base/tests/CMakeFiles/Logging_test.dir/build.make base/tests/CMakeFiles/Logging_test.dir/build
+.PHONY : Logging_test/fast
 
 #=============================================================================
 # Target rules for targets named Exception_test
@@ -259,6 +298,32 @@ Singleton_test/fast:
 .PHONY : Singleton_test/fast
 
 #=============================================================================
+# Target rules for targets named BlockingQueue_test
+
+# Build rule for target.
+BlockingQueue_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 BlockingQueue_test
+.PHONY : BlockingQueue_test
+
+# fast build rule for target.
+BlockingQueue_test/fast:
+	$(MAKE) -f base/tests/CMakeFiles/BlockingQueue_test.dir/build.make base/tests/CMakeFiles/BlockingQueue_test.dir/build
+.PHONY : BlockingQueue_test/fast
+
+#=============================================================================
+# Target rules for targets named ThreadLocal_test
+
+# Build rule for target.
+ThreadLocal_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ThreadLocal_test
+.PHONY : ThreadLocal_test
+
+# fast build rule for target.
+ThreadLocal_test/fast:
+	$(MAKE) -f base/tests/CMakeFiles/ThreadLocal_test.dir/build.make base/tests/CMakeFiles/ThreadLocal_test.dir/build
+.PHONY : ThreadLocal_test/fast
+
+#=============================================================================
 # Target rules for targets named ThreadPool_test
 
 # Build rule for target.
@@ -272,17 +337,43 @@ ThreadPool_test/fast:
 .PHONY : ThreadPool_test/fast
 
 #=============================================================================
-# Target rules for targets named BlockingQueue_test
+# Target rules for targets named ThreadLocalSingleton_test
 
 # Build rule for target.
-BlockingQueue_test: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 BlockingQueue_test
-.PHONY : BlockingQueue_test
+ThreadLocalSingleton_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ThreadLocalSingleton_test
+.PHONY : ThreadLocalSingleton_test
 
 # fast build rule for target.
-BlockingQueue_test/fast:
-	$(MAKE) -f base/tests/CMakeFiles/BlockingQueue_test.dir/build.make base/tests/CMakeFiles/BlockingQueue_test.dir/build
-.PHONY : BlockingQueue_test/fast
+ThreadLocalSingleton_test/fast:
+	$(MAKE) -f base/tests/CMakeFiles/ThreadLocalSingleton_test.dir/build.make base/tests/CMakeFiles/ThreadLocalSingleton_test.dir/build
+.PHONY : ThreadLocalSingleton_test/fast
+
+#=============================================================================
+# Target rules for targets named LogStream_test
+
+# Build rule for target.
+LogStream_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 LogStream_test
+.PHONY : LogStream_test
+
+# fast build rule for target.
+LogStream_test/fast:
+	$(MAKE) -f base/tests/CMakeFiles/LogStream_test.dir/build.make base/tests/CMakeFiles/LogStream_test.dir/build
+.PHONY : LogStream_test/fast
+
+#=============================================================================
+# Target rules for targets named myserver_net
+
+# Build rule for target.
+myserver_net: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 myserver_net
+.PHONY : myserver_net
+
+# fast build rule for target.
+myserver_net/fast:
+	$(MAKE) -f net/CMakeFiles/myserver_net.dir/build.make net/CMakeFiles/myserver_net.dir/build
+.PHONY : myserver_net/fast
 
 # Help Target
 help:
@@ -299,13 +390,20 @@ help:
 	@echo "... test"
 	@echo "... myserver_base"
 	@echo "... timestamp_unittest"
-	@echo "... Atomic_unittest"
+	@echo "... LogStream_bench"
+	@echo "... SingletonThreadLocal_test"
 	@echo "... BoundedBlockingQueue_test"
+	@echo "... Atomic_unittest"
+	@echo "... Logging_test"
 	@echo "... Exception_test"
 	@echo "... Thread_test"
 	@echo "... Singleton_test"
-	@echo "... ThreadPool_test"
 	@echo "... BlockingQueue_test"
+	@echo "... ThreadLocal_test"
+	@echo "... ThreadPool_test"
+	@echo "... ThreadLocalSingleton_test"
+	@echo "... LogStream_test"
+	@echo "... myserver_net"
 .PHONY : help
 
 

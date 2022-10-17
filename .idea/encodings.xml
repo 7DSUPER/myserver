@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/base/FileUtil.cpp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/base/FileUtil.h" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/base/tests/LogStream_bench.cpp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/base/tests/LogStream_test.cpp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/net/CMakeLists.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/net/poller/CMakeLists.txt" charset="GBK" />
+  </component>
+</project>

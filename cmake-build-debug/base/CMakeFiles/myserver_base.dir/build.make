@@ -96,9 +96,74 @@ base/CMakeFiles/myserver_base.dir/Exception.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/myserver_base.dir/Exception.cpp.s"
 	cd /home/xqm/myserver/cmake-build-debug/base && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xqm/myserver/base/Exception.cpp -o CMakeFiles/myserver_base.dir/Exception.cpp.s
 
+base/CMakeFiles/myserver_base.dir/FileUtil.cpp.o: base/CMakeFiles/myserver_base.dir/flags.make
+base/CMakeFiles/myserver_base.dir/FileUtil.cpp.o: ../base/FileUtil.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xqm/myserver/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object base/CMakeFiles/myserver_base.dir/FileUtil.cpp.o"
+	cd /home/xqm/myserver/cmake-build-debug/base && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/myserver_base.dir/FileUtil.cpp.o -c /home/xqm/myserver/base/FileUtil.cpp
+
+base/CMakeFiles/myserver_base.dir/FileUtil.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/myserver_base.dir/FileUtil.cpp.i"
+	cd /home/xqm/myserver/cmake-build-debug/base && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xqm/myserver/base/FileUtil.cpp > CMakeFiles/myserver_base.dir/FileUtil.cpp.i
+
+base/CMakeFiles/myserver_base.dir/FileUtil.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/myserver_base.dir/FileUtil.cpp.s"
+	cd /home/xqm/myserver/cmake-build-debug/base && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xqm/myserver/base/FileUtil.cpp -o CMakeFiles/myserver_base.dir/FileUtil.cpp.s
+
+base/CMakeFiles/myserver_base.dir/Logging.cpp.o: base/CMakeFiles/myserver_base.dir/flags.make
+base/CMakeFiles/myserver_base.dir/Logging.cpp.o: ../base/Logging.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xqm/myserver/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object base/CMakeFiles/myserver_base.dir/Logging.cpp.o"
+	cd /home/xqm/myserver/cmake-build-debug/base && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/myserver_base.dir/Logging.cpp.o -c /home/xqm/myserver/base/Logging.cpp
+
+base/CMakeFiles/myserver_base.dir/Logging.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/myserver_base.dir/Logging.cpp.i"
+	cd /home/xqm/myserver/cmake-build-debug/base && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xqm/myserver/base/Logging.cpp > CMakeFiles/myserver_base.dir/Logging.cpp.i
+
+base/CMakeFiles/myserver_base.dir/Logging.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/myserver_base.dir/Logging.cpp.s"
+	cd /home/xqm/myserver/cmake-build-debug/base && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xqm/myserver/base/Logging.cpp -o CMakeFiles/myserver_base.dir/Logging.cpp.s
+
+base/CMakeFiles/myserver_base.dir/LogStream.cpp.o: base/CMakeFiles/myserver_base.dir/flags.make
+base/CMakeFiles/myserver_base.dir/LogStream.cpp.o: ../base/LogStream.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xqm/myserver/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object base/CMakeFiles/myserver_base.dir/LogStream.cpp.o"
+	cd /home/xqm/myserver/cmake-build-debug/base && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/myserver_base.dir/LogStream.cpp.o -c /home/xqm/myserver/base/LogStream.cpp
+
+base/CMakeFiles/myserver_base.dir/LogStream.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/myserver_base.dir/LogStream.cpp.i"
+	cd /home/xqm/myserver/cmake-build-debug/base && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xqm/myserver/base/LogStream.cpp > CMakeFiles/myserver_base.dir/LogStream.cpp.i
+
+base/CMakeFiles/myserver_base.dir/LogStream.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/myserver_base.dir/LogStream.cpp.s"
+	cd /home/xqm/myserver/cmake-build-debug/base && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xqm/myserver/base/LogStream.cpp -o CMakeFiles/myserver_base.dir/LogStream.cpp.s
+
+base/CMakeFiles/myserver_base.dir/LogFile.cpp.o: base/CMakeFiles/myserver_base.dir/flags.make
+base/CMakeFiles/myserver_base.dir/LogFile.cpp.o: ../base/LogFile.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xqm/myserver/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object base/CMakeFiles/myserver_base.dir/LogFile.cpp.o"
+	cd /home/xqm/myserver/cmake-build-debug/base && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/myserver_base.dir/LogFile.cpp.o -c /home/xqm/myserver/base/LogFile.cpp
+
+base/CMakeFiles/myserver_base.dir/LogFile.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/myserver_base.dir/LogFile.cpp.i"
+	cd /home/xqm/myserver/cmake-build-debug/base && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xqm/myserver/base/LogFile.cpp > CMakeFiles/myserver_base.dir/LogFile.cpp.i
+
+base/CMakeFiles/myserver_base.dir/LogFile.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/myserver_base.dir/LogFile.cpp.s"
+	cd /home/xqm/myserver/cmake-build-debug/base && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xqm/myserver/base/LogFile.cpp -o CMakeFiles/myserver_base.dir/LogFile.cpp.s
+
+base/CMakeFiles/myserver_base.dir/ProcessInfo.cpp.o: base/CMakeFiles/myserver_base.dir/flags.make
+base/CMakeFiles/myserver_base.dir/ProcessInfo.cpp.o: ../base/ProcessInfo.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xqm/myserver/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object base/CMakeFiles/myserver_base.dir/ProcessInfo.cpp.o"
+	cd /home/xqm/myserver/cmake-build-debug/base && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/myserver_base.dir/ProcessInfo.cpp.o -c /home/xqm/myserver/base/ProcessInfo.cpp
+
+base/CMakeFiles/myserver_base.dir/ProcessInfo.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/myserver_base.dir/ProcessInfo.cpp.i"
+	cd /home/xqm/myserver/cmake-build-debug/base && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xqm/myserver/base/ProcessInfo.cpp > CMakeFiles/myserver_base.dir/ProcessInfo.cpp.i
+
+base/CMakeFiles/myserver_base.dir/ProcessInfo.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/myserver_base.dir/ProcessInfo.cpp.s"
+	cd /home/xqm/myserver/cmake-build-debug/base && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xqm/myserver/base/ProcessInfo.cpp -o CMakeFiles/myserver_base.dir/ProcessInfo.cpp.s
+
 base/CMakeFiles/myserver_base.dir/Thread.cpp.o: base/CMakeFiles/myserver_base.dir/flags.make
 base/CMakeFiles/myserver_base.dir/Thread.cpp.o: ../base/Thread.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xqm/myserver/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object base/CMakeFiles/myserver_base.dir/Thread.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xqm/myserver/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object base/CMakeFiles/myserver_base.dir/Thread.cpp.o"
 	cd /home/xqm/myserver/cmake-build-debug/base && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/myserver_base.dir/Thread.cpp.o -c /home/xqm/myserver/base/Thread.cpp
 
 base/CMakeFiles/myserver_base.dir/Thread.cpp.i: cmake_force
@@ -111,7 +176,7 @@ base/CMakeFiles/myserver_base.dir/Thread.cpp.s: cmake_force
 
 base/CMakeFiles/myserver_base.dir/ThreadPool.cpp.o: base/CMakeFiles/myserver_base.dir/flags.make
 base/CMakeFiles/myserver_base.dir/ThreadPool.cpp.o: ../base/ThreadPool.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xqm/myserver/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object base/CMakeFiles/myserver_base.dir/ThreadPool.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xqm/myserver/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object base/CMakeFiles/myserver_base.dir/ThreadPool.cpp.o"
 	cd /home/xqm/myserver/cmake-build-debug/base && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/myserver_base.dir/ThreadPool.cpp.o -c /home/xqm/myserver/base/ThreadPool.cpp
 
 base/CMakeFiles/myserver_base.dir/ThreadPool.cpp.i: cmake_force
@@ -124,7 +189,7 @@ base/CMakeFiles/myserver_base.dir/ThreadPool.cpp.s: cmake_force
 
 base/CMakeFiles/myserver_base.dir/Timestamp.cpp.o: base/CMakeFiles/myserver_base.dir/flags.make
 base/CMakeFiles/myserver_base.dir/Timestamp.cpp.o: ../base/Timestamp.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xqm/myserver/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object base/CMakeFiles/myserver_base.dir/Timestamp.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xqm/myserver/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object base/CMakeFiles/myserver_base.dir/Timestamp.cpp.o"
 	cd /home/xqm/myserver/cmake-build-debug/base && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/myserver_base.dir/Timestamp.cpp.o -c /home/xqm/myserver/base/Timestamp.cpp
 
 base/CMakeFiles/myserver_base.dir/Timestamp.cpp.i: cmake_force
@@ -140,6 +205,11 @@ myserver_base_OBJECTS = \
 "CMakeFiles/myserver_base.dir/Condition.cpp.o" \
 "CMakeFiles/myserver_base.dir/CountDownLatch.cpp.o" \
 "CMakeFiles/myserver_base.dir/Exception.cpp.o" \
+"CMakeFiles/myserver_base.dir/FileUtil.cpp.o" \
+"CMakeFiles/myserver_base.dir/Logging.cpp.o" \
+"CMakeFiles/myserver_base.dir/LogStream.cpp.o" \
+"CMakeFiles/myserver_base.dir/LogFile.cpp.o" \
+"CMakeFiles/myserver_base.dir/ProcessInfo.cpp.o" \
 "CMakeFiles/myserver_base.dir/Thread.cpp.o" \
 "CMakeFiles/myserver_base.dir/ThreadPool.cpp.o" \
 "CMakeFiles/myserver_base.dir/Timestamp.cpp.o"
@@ -150,12 +220,17 @@ myserver_base_EXTERNAL_OBJECTS =
 lib/libmyserver_base.a: base/CMakeFiles/myserver_base.dir/Condition.cpp.o
 lib/libmyserver_base.a: base/CMakeFiles/myserver_base.dir/CountDownLatch.cpp.o
 lib/libmyserver_base.a: base/CMakeFiles/myserver_base.dir/Exception.cpp.o
+lib/libmyserver_base.a: base/CMakeFiles/myserver_base.dir/FileUtil.cpp.o
+lib/libmyserver_base.a: base/CMakeFiles/myserver_base.dir/Logging.cpp.o
+lib/libmyserver_base.a: base/CMakeFiles/myserver_base.dir/LogStream.cpp.o
+lib/libmyserver_base.a: base/CMakeFiles/myserver_base.dir/LogFile.cpp.o
+lib/libmyserver_base.a: base/CMakeFiles/myserver_base.dir/ProcessInfo.cpp.o
 lib/libmyserver_base.a: base/CMakeFiles/myserver_base.dir/Thread.cpp.o
 lib/libmyserver_base.a: base/CMakeFiles/myserver_base.dir/ThreadPool.cpp.o
 lib/libmyserver_base.a: base/CMakeFiles/myserver_base.dir/Timestamp.cpp.o
 lib/libmyserver_base.a: base/CMakeFiles/myserver_base.dir/build.make
 lib/libmyserver_base.a: base/CMakeFiles/myserver_base.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/xqm/myserver/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX static library ../lib/libmyserver_base.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/xqm/myserver/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX static library ../lib/libmyserver_base.a"
 	cd /home/xqm/myserver/cmake-build-debug/base && $(CMAKE_COMMAND) -P CMakeFiles/myserver_base.dir/cmake_clean_target.cmake
 	cd /home/xqm/myserver/cmake-build-debug/base && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/myserver_base.dir/link.txt --verbose=$(VERBOSE)
 
